@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="e1d90ba0-2dc8-4cb6-819c-97654969b48c" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ProjectId" id="1mbAIWyvAPeIldXiuGnor2z6hBx" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="com.kkennib.Main" />
+      <module name="GoodWill" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e1d90ba0-2dc8-4cb6-819c-97654969b48c" name="Default Changelist" comment="" />
+      <created>1609751837264</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1609751837264</updated>
+      <workItem from="1609751841155" duration="292000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="2467" height="400" key="GridCell.Tab.0.bottom" timestamp="1609752135792">
+      <screen x="93" y="0" width="2467" height="1440" />
+    </state>
+    <state width="2467" height="400" key="GridCell.Tab.0.bottom/93.0.2467.1440/3840.40.1080.1880@93.0.2467.1440" timestamp="1609752135792" />
+    <state width="2467" height="400" key="GridCell.Tab.0.center" timestamp="1609752135792">
+      <screen x="93" y="0" width="2467" height="1440" />
+    </state>
+    <state width="2467" height="400" key="GridCell.Tab.0.center/93.0.2467.1440/3840.40.1080.1880@93.0.2467.1440" timestamp="1609752135792" />
+    <state width="2467" height="400" key="GridCell.Tab.0.left" timestamp="1609752135792">
+      <screen x="93" y="0" width="2467" height="1440" />
+    </state>
+    <state width="2467" height="400" key="GridCell.Tab.0.left/93.0.2467.1440/3840.40.1080.1880@93.0.2467.1440" timestamp="1609752135792" />
+    <state width="2467" height="400" key="GridCell.Tab.0.right" timestamp="1609752135792">
+      <screen x="93" y="0" width="2467" height="1440" />
+    </state>
+    <state width="2467" height="400" key="GridCell.Tab.0.right/93.0.2467.1440/3840.40.1080.1880@93.0.2467.1440" timestamp="1609752135792" />
+  </component>
+</project>
