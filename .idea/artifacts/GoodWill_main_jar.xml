@@ -1,0 +1,35 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="GoodWill.main:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/GoodWill_main_jar</output-path>
+    <root id="archive" name="GoodWill.main.jar">
+      <element id="module-output" name="GoodWill.main" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.netty/netty-resolver/4.1.53.Final/fe243ee1fddf47e3d54ec83d9f42ef35bcb5ac3e/netty-resolver-4.1.53.Final.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.netty/netty-codec-http/4.1.53.Final/9f62cacb250ec65bdb368a178d2453535c365947/netty-codec-http-4.1.53.Final.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.netty/netty-codec-dns/4.1.53.Final/7d051b78643b035e0adf0bb2caec3c295b4972de/netty-codec-dns-4.1.53.Final.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-databind/2.11.2/ee08bbd8975dde844307fe8309dfcd5ec7ee129d/jackson-databind-2.11.2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.netty/netty-transport-native-unix-common/4.1.53.Final/ec607307135a9edd1a48db7afa6edbaaac3dcf7b/netty-transport-native-unix-common-4.1.53.Final-linux-x86_64.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.netty/netty-buffer/4.1.53.Final/a28d2694ff1bc95c627108b01949de3697b4c232/netty-buffer-4.1.53.Final.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.netty/netty-transport/4.1.53.Final/856f737f7c512f2e2b970df254f15fc558e991c/netty-transport-4.1.53.Final.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.netty/netty-codec-socks/4.1.53.Final/669ea5cd9137c57d5b2dd71b11ed59adf1d70f85/netty-codec-socks-4.1.53.Final.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.netty/netty-handler-proxy/4.1.53.Final/24007d9b48de8694e62c0796e5e7bc51c1b0f369/netty-handler-proxy-4.1.53.Final.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.netty/netty-codec/4.1.53.Final/47aca7eb6f3a4ea623195906dd9caf3a1863e187/netty-codec-4.1.53.Final.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.reactivestreams/reactive-streams/1.0.3/d9fb7a7926ffa635b3dcaa5049fb2bfa25b3e7d0/reactive-streams-1.0.3.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-annotations/2.11.2/e0a7f61fce3e3eac38a079c11831868269de2ea/jackson-annotations-2.11.2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.netty/netty-codec-http2/4.1.53.Final/97612c9c5b07cd7c7822542fa373b3263ccb8da0/netty-codec-http2-4.1.53.Final.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.netty/netty-transport-native-unix-common/4.1.53.Final/6f02f15189540ebcf74d032e74be00f4c2f6e5de/netty-transport-native-unix-common-4.1.53.Final.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.hdrhistogram/HdrHistogram/2.1.12/6eb7552156e0d517ae80cc2247be1427c8d90452/HdrHistogram-2.1.12.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.netty/netty-common/4.1.53.Final/f5aac2cd268483ded1f76dacc5c9eb27899dee72/netty-common-4.1.53.Final.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.netty/netty-tcnative-boringssl-static/2.0.34.Final/2c6ed37507465974089e51d425787a11c53cdfb5/netty-tcnative-boringssl-static-2.0.34.Final.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/3.0.2/25ea2e8b0c338a877313bd4672d3fe056ea78f0d/jsr305-3.0.2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.netty/netty-handler/4.1.53.Final/106846090e4bab23537d52da281616a001611e0c/netty-handler-4.1.53.Final.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.netty/netty-transport-native-epoll/4.1.53.Final/44f7dd0f300c40ee1ea6ac275cfadb1d2be09b4f/netty-transport-native-epoll-4.1.53.Final-linux-x86_64.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.latencyutils/LatencyUtils/2.0.3/769c0b82cb2421c8256300e907298a9410a2a3d3/LatencyUtils-2.0.3.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-core/2.11.2/bc022ab0f0c83c07f9c52c5ab9a6a4932b15cc35/jackson-core-2.11.2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.7.30/b5a4b6d16ab13e34a88fae84c35cd5d68cac922c/slf4j-api-1.7.30.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.micrometer/micrometer-core/1.5.5/f99c57087263b2db589390603c3a0f8b1ab8deaa/micrometer-core-1.5.5.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.netty/netty-codec-haproxy/4.1.53.Final/3651c2870c1f246942258fb74bda8d1b5215d6ce/netty-codec-haproxy-4.1.53.Final.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.linecorp.armeria/armeria/1.2.0/9c5cf9ea5cebfcc80771adc08c0ef175eb152ca7/armeria-1.2.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.netty/netty-resolver-dns/4.1.53.Final/73fd6fc1d9e8742b41a696cc5ef5525e190a1a24/netty-resolver-dns-4.1.53.Final.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
