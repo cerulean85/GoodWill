@@ -16,7 +16,7 @@ public class BootController {
 
         // Channel is the abstraction to connect to a service endpoint
         // Let's use plaintext communication because we don't have certs
-        final ManagedChannel channel = ManagedChannelBuilder.forTarget("localhost:8080")
+        final ManagedChannel channel = ManagedChannelBuilder.forTarget("localhost:8085")
                 .usePlaintext(true)
                 .build();
 
@@ -40,6 +40,14 @@ public class BootController {
 
 
         return "hello";
+    }
+
+    @RequestMapping(value="/gen_keywords")
+    public String generateKeywords() {
+
+
+
+        return "practice";
     }
 
 }

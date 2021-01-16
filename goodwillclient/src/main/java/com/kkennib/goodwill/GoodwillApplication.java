@@ -20,18 +20,18 @@ public class GoodwillApplication {
 
 
 
-        // Create a new server to listen on port 8080
-        Server server = ServerBuilder.forPort(8083)
-                .addService(new GreetingServiceImpl())
-                .build();
-
-        // Start the server
-        server.start();
-
-        // Server threads are running in the background.
-        System.out.println("Server started");
-        // Don't exit the main thread. Wait until server is terminated.
-        server.awaitTermination();
+//        // Create a new server to listen on port 8080
+//        Server server = ServerBuilder.forPort(8084)
+//                .addService(new GreetingServiceImpl())
+//                .build();
+//
+//        // Start the server
+//        server.start();
+//
+//        // Server threads are running in the background.
+//        System.out.println("Server started");
+//        // Don't exit the main thread. Wait until server is terminated.
+//        server.awaitTermination();
 
     }
 

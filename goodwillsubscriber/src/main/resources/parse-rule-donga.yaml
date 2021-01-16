@@ -1,0 +1,53 @@
+selenium: false
+
+title:
+  - h1:
+      class: title
+
+date:
+  - span:
+      class: date01
+
+article:
+  - div:
+      class: article_txt
+
+articleDecompose:
+  - div:
+      class: armerica_ban
+  - div:
+      class: article_relation
+  - div:
+      class: center_ban
+  - div:
+      id: bestnews_layer
+  - div:
+      class: recommend_cont
+  - div:
+      class: view_ads01
+  - div:
+      class: view_ads02
+  - div:
+      class: view_ads03
+  - div:
+      class: view_ads04
+  - div:
+      class: view_ads05
+  - div:
+      class: view_ads06
+  - div:
+      class: view_many
+  - div:
+      class: reply_box
+  - div:
+      class: article_keyword
+  - div:
+      class: articlePhotoC
+
+
+
+
+
+
+
+      

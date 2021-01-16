@@ -1,0 +1,14 @@
+package com.kkennib.keyword;
+
+import lombok.Data;
+
+@Data
+public class KeywordFormat {
+    private String operator;
+    private String keyword;
+    private String startDate;
+    private String endDate;
+    private String site;
+    private String topicName;
+
+}

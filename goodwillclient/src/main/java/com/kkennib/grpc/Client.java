@@ -9,7 +9,7 @@ public class Client {
     public static void main(String[] args) throws Exception {
         // Channel is the abstraction to connect to a service endpoint
         // Let's use plaintext communication because we don't have certs
-        final ManagedChannel channel = ManagedChannelBuilder.forTarget("localhost:8090")
+        final ManagedChannel channel = ManagedChannelBuilder.forTarget("localhost:8085")
                 .usePlaintext(true)
                 .build();
 
