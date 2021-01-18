@@ -16,6 +16,7 @@ public class ConsumerProcess {
     Logger log = LoggerFactory.getLogger(ConsumerProcess.class);
 
     private String topicName;
+    public String getTopicName() { return topicName; }
     private DefaultExecuteResultHandler resultHandler = null;
 
     public ConsumerProcess(String topicName) {

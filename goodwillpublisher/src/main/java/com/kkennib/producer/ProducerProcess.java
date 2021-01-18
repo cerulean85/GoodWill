@@ -29,8 +29,8 @@ public class ProducerProcess implements Runnable {
         DefaultExecutor executor = new DefaultExecutor();
         executor.setStreamHandler(new PumpStreamHandler(outputStream));
         for(KeywordFormat kwdFormat : keySet) {
-            String cmd = processPath + kwdFormat.getSite() + " " + kwdFormat.getKeyword() + " "
-                        + kwdFormat.getStartDate() + " " +  kwdFormat.getEndDate() + " " + kwdFormat.getTopicName();
+            String cmd = processPath + kwdFormat.getSiteType() + " " + kwdFormat.getKeyword() + " "
+                        + kwdFormat.getStartDate() + " " +  kwdFormat.getEndDate() + " " + kwdFormat.getTopicName() + " " + kwdFormat.getGroupId();
             CommandLine cmdLine = CommandLine.parse(cmd);
             executor.execute(cmdLine);
         }

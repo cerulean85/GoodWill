@@ -11,7 +11,7 @@ import java.io.IOException;
 @SpringBootApplication
 public class GoodwillApplication {
 
-    public static void main(String[] args) throws IOException, InterruptedException {
+    public static void main(String[] args) {
 
 
 

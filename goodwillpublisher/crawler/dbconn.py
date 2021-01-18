@@ -18,15 +18,15 @@ class DBConn:
             now.tm_year, now.tm_mon, now.tm_mday, now.tm_hour, now.tm_min, now.tm_sec)
         return timestamp
 
-    def insertState(self, topicName, siteType, keyword, startDate, endDate):
+    def insertState(self, topicName, groupId, siteType, keyword, startDate, endDate):
 
         currentDate = self.getCurrentDate()
 
-        sql = "INSERT INTO work_state(topic_name, current_state, site_type, keyword, start_date, end_date, update_date) " \
+        sql = "INSERT INTO work_state(topic_name, group_id111youy, current_state, site_type, keyword, start_date, end_date, update_date) " \
             + "VALUES(%s, %s, %s, %s, %s, %s, now())"
         cursor = self.dbconn.cursor()
 
-        cursor.execute(sql, (topicName, 'enrolled', siteType, keyword, startDate, endDate))
+        cursor.execute(sql, (topicName, groupId, 'enrolled', siteType, keyword, startDate, endDate))
         self.dbconn.commit()
 
     def updateState_Waiting(self, topicName, totalWorkCount):

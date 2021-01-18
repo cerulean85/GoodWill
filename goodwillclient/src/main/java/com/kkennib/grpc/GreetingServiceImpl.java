@@ -4,20 +4,42 @@ import io.grpc.stub.StreamObserver;
 
 public class GreetingServiceImpl extends GreetingServiceGrpc.GreetingServiceImplBase {
     @Override
-    public void greeting(GreetingServiceOuterClass.HelloRequest request,
-                         StreamObserver<GreetingServiceOuterClass.HelloResponse> responseObserver) {
-        // HelloRequest has toString auto-generated.
-        System.out.println(request);
+    public void createWork(GreetingServiceOuterClass.KeywordFormat request,
+                           StreamObserver<GreetingServiceOuterClass.WorkResponse> responseObserver)
+    {
 
-        // You must use a builder to construct a new Protobuffer object
-        GreetingServiceOuterClass.HelloResponse response = GreetingServiceOuterClass.HelloResponse.newBuilder()
-                .setGreeting("Hello there, " + request.getName())
-                .build();
-
-        // Use responseObserver to send a single response back
-        responseObserver.onNext(response);
-
-        // When you are done, you must call onCompleted.
-        responseObserver.onCompleted();
     }
+
+    @Override
+    public void resumeWork(GreetingServiceOuterClass.KeywordFormat request,
+                           StreamObserver<GreetingServiceOuterClass.WorkResponse> responseObserver)
+    {
+
+    }
+
+    @Override
+    public void beginWork(GreetingServiceOuterClass.KeywordFormat request,
+                          StreamObserver<GreetingServiceOuterClass.WorkResponse> responseObserver) {
+
+    }
+
+    @Override
+    public void pauseWork(GreetingServiceOuterClass.KeywordFormat request,
+                          StreamObserver<GreetingServiceOuterClass.WorkResponse> responseObserver)
+    {
+    }
+
+    @Override
+    public void terminateWork(GreetingServiceOuterClass.KeywordFormat request,
+                              StreamObserver<GreetingServiceOuterClass.WorkResponse> responseObserver)
+    {
+    }
+
+    @Override
+    public void getWorkTable(GreetingServiceOuterClass.KeywordFormat request,
+                             StreamObserver<GreetingServiceOuterClass.WorkList> responseObserver)
+    {
+
+    }
+
 }

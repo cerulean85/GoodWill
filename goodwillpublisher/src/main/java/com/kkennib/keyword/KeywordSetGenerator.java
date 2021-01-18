@@ -1,10 +1,8 @@
 package com.kkennib.keyword;
 
+import com.kkennib.Util;
 import lombok.Data;
 
-import java.security.MessageDigest;
-import java.security.NoSuchAlgorithmException;
-import java.sql.Timestamp;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -74,13 +72,13 @@ public class KeywordSetGenerator {
                     String uKeyword = kwdStrSet.get(i).replace(" ", "_");
                     String uStartDate = startDate;
                     String uEndDate = endDate;
-                    String uTopicNameSrc = uSite + uKeyword + uStartDate + uEndDate + (new Timestamp(System.currentTimeMillis()));
+                    String uTopicNameSrc = uSite + uKeyword + uStartDate + uEndDate + Util.getTimestamp();
 
                     kwdForm.setKeyword(uKeyword);
-                    kwdForm.setSite(uSite);
+                    kwdForm.setSiteType(uSite);
                     kwdForm.setStartDate(uStartDate);
                     kwdForm.setEndDate(uEndDate);
-                    kwdForm.setTopicName(getMD5(uTopicNameSrc));
+                    kwdForm.setTopicName(Util.getMD5(uTopicNameSrc));
                     this.keywordSet.add(kwdForm);
                 }
             }
@@ -89,25 +87,6 @@ public class KeywordSetGenerator {
         return this.keywordSet;
     }
 
-    public String getMD5(String str){
 
-        String MD5 = "";
-
-        try{
-            MessageDigest md = MessageDigest.getInstance("MD5");
-            md.update(str.getBytes());
-            byte byteData[] = md.digest();
-            StringBuffer sb = new StringBuffer();
-            for(int i = 0 ; i < byteData.length ; i++){
-                sb.append(Integer.toString((byteData[i]&0xff) + 0x100, 16).substring(1));
-            }
-            MD5 = sb.toString();
-
-        }catch(NoSuchAlgorithmException e){
-            e.printStackTrace();
-            MD5 = null;
-        }
-        return MD5;
-    }
 
 }

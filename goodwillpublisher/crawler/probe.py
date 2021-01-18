@@ -24,7 +24,7 @@ def getTimestamp():
     return timestamp
 
 
-def articleDonga(keyword, startDate, endDate, topicName):
+def articleDonga(keyword, startDate, endDate, topicName, groupId):
     exceptionType = 200
 
     if keyword == '':
@@ -50,7 +50,7 @@ def articleDonga(keyword, startDate, endDate, topicName):
             totalArticleCount = int(_totalCountStr)
             totalPageCount = int(math.ceil(totalArticleCount / 15))
 
-            dbconn.insertState(topicName, 'donga', keyword, startDate, endDate)
+            dbconn.insertState(topicName, groupId, 'donga', keyword, startDate, endDate)
 
 
         except:
@@ -82,10 +82,11 @@ if __name__ == "__main__":
     startDate = sys.argv[3]
     endDate = sys.argv[4]
     topicName = sys.argv[5]
+    groupId = sys.argv[6]
 
     if site != '' and keyword != '' and startDate != '' and endDate != '' and topicName != '':
         if site == 'donga':
-            articleDonga(keyword, startDate, endDate, topicName)
+            articleDonga(keyword, startDate, endDate, topicName, groupId)
     else:
         print(json.dumps(
             {

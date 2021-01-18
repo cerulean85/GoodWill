@@ -2,26 +2,40 @@ syntax = "proto3";
 package com.kkennib.grpc;
 
 // Request payload
-message HelloRequest {
-  // Each message attribute is strongly typed.
-  // You also must assign a "tag" number.
-  // Each tag number is unique within the message.
-  string name = 1;
-
-  // This defines a strongly typed list of String
-  repeated string hobbies = 2;
-
-  // There are many more basics types, like Enum, Map
-  // See https://developers.google.com/protocol-buffers/docs/proto3
-  // for more information.
+message KeywordFormat {
+  string groupId = 1;
+  string keywords = 2;
+  string dates = 3;
+  string siteTypes = 4;
+  string currentState = 5;
+  string operators = 6;
+  int64 totalWorkCount = 7;
+  int64 finishedWorkCount = 8;
+  string topicName = 9;
+  string keyword = 10;
+  string siteType = 11;
+  string startDate = 12;
+  string endDate = 13;
+  string packgedFileName = 14;
 }
 
-message HelloResponse {
-  string greeting = 1;
+message WorkResponse {
+  string groupId = 1;
+  string result = 2;
+  float rate = 3;
 }
 
-// Defining a Service, a Service can have multiple RPC operations
+message WorkList {
+  repeated KeywordFormat list = 1;
+}
+
 service GreetingService {
-  // Define a RPC operation
-  rpc greeting(HelloRequest) returns (HelloResponse);
+  rpc createWork(KeywordFormat) returns (WorkResponse);
+  rpc beginWork(KeywordFormat) returns (WorkResponse);
+  rpc resumeWork(KeywordFormat) returns (WorkResponse);
+  rpc terminateWork(KeywordFormat) returns (WorkResponse);
+  rpc pauseWork(KeywordFormat) returns (WorkResponse);
+  rpc getCurrentState(KeywordFormat) returns (stream WorkResponse);
+  rpc getWorkTable(KeywordFormat) returns (WorkList);
+  rpc greeting(KeywordFormat) returns (WorkResponse);
 }

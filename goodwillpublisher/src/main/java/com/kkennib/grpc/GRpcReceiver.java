@@ -7,19 +7,21 @@ import java.io.IOException;
 
 public class GRpcReceiver {
 
-    public void receive() throws IOException, InterruptedException {
+    public void receive() {
 
-        Server server = ServerBuilder.forPort(8085)
-                .addService(new GreetingServiceImpl())
-                .build();
+        try {
+            Server server = ServerBuilder.forPort(8084)
+                    .addService(new GreetingServiceImpl())
+                    .build();
 
-        // Start the server
-        server.start();
+            server.start();
 
-        // Server threads are running in the background.
-        System.out.println("Publisher Receiving Packets...");
-        // Don't exit the main thread. Wait until server is terminated.
-        server.awaitTermination();
+            System.out.println("Publisher Receiving Packets...");
+            server.awaitTermination();
+
+        } catch(IOException | InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 
 }

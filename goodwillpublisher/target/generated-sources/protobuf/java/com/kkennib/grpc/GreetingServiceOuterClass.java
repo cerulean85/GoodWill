@@ -14,93 +14,176 @@ public final class GreetingServiceOuterClass {
     registerAllExtensions(
         (com.google.protobuf.ExtensionRegistryLite) registry);
   }
-  public interface HelloRequestOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:com.kkennib.grpc.HelloRequest)
+  public interface KeywordFormatOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:com.kkennib.grpc.KeywordFormat)
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     * Each message attribute is strongly typed.
-     * You also must assign a "tag" number.
-     * Each tag number is unique within the message.
-     * </pre>
-     *
-     * <code>string name = 1;</code>
+     * <code>string groupId = 1;</code>
      */
-    java.lang.String getName();
+    java.lang.String getGroupId();
     /**
-     * <pre>
-     * Each message attribute is strongly typed.
-     * You also must assign a "tag" number.
-     * Each tag number is unique within the message.
-     * </pre>
-     *
-     * <code>string name = 1;</code>
+     * <code>string groupId = 1;</code>
      */
     com.google.protobuf.ByteString
-        getNameBytes();
+        getGroupIdBytes();
 
     /**
-     * <pre>
-     * This defines a strongly typed list of String
-     * </pre>
-     *
-     * <code>repeated string hobbies = 2;</code>
+     * <code>string keywords = 2;</code>
      */
-    java.util.List<java.lang.String>
-        getHobbiesList();
+    java.lang.String getKeywords();
     /**
-     * <pre>
-     * This defines a strongly typed list of String
-     * </pre>
-     *
-     * <code>repeated string hobbies = 2;</code>
-     */
-    int getHobbiesCount();
-    /**
-     * <pre>
-     * This defines a strongly typed list of String
-     * </pre>
-     *
-     * <code>repeated string hobbies = 2;</code>
-     */
-    java.lang.String getHobbies(int index);
-    /**
-     * <pre>
-     * This defines a strongly typed list of String
-     * </pre>
-     *
-     * <code>repeated string hobbies = 2;</code>
+     * <code>string keywords = 2;</code>
      */
     com.google.protobuf.ByteString
-        getHobbiesBytes(int index);
+        getKeywordsBytes();
+
+    /**
+     * <code>string dates = 3;</code>
+     */
+    java.lang.String getDates();
+    /**
+     * <code>string dates = 3;</code>
+     */
+    com.google.protobuf.ByteString
+        getDatesBytes();
+
+    /**
+     * <code>string siteTypes = 4;</code>
+     */
+    java.lang.String getSiteTypes();
+    /**
+     * <code>string siteTypes = 4;</code>
+     */
+    com.google.protobuf.ByteString
+        getSiteTypesBytes();
+
+    /**
+     * <code>string currentState = 5;</code>
+     */
+    java.lang.String getCurrentState();
+    /**
+     * <code>string currentState = 5;</code>
+     */
+    com.google.protobuf.ByteString
+        getCurrentStateBytes();
+
+    /**
+     * <code>string operators = 6;</code>
+     */
+    java.lang.String getOperators();
+    /**
+     * <code>string operators = 6;</code>
+     */
+    com.google.protobuf.ByteString
+        getOperatorsBytes();
+
+    /**
+     * <code>int64 totalWorkCount = 7;</code>
+     */
+    long getTotalWorkCount();
+
+    /**
+     * <code>int64 finishedWorkCount = 8;</code>
+     */
+    long getFinishedWorkCount();
+
+    /**
+     * <code>string topicName = 9;</code>
+     */
+    java.lang.String getTopicName();
+    /**
+     * <code>string topicName = 9;</code>
+     */
+    com.google.protobuf.ByteString
+        getTopicNameBytes();
+
+    /**
+     * <code>string keyword = 10;</code>
+     */
+    java.lang.String getKeyword();
+    /**
+     * <code>string keyword = 10;</code>
+     */
+    com.google.protobuf.ByteString
+        getKeywordBytes();
+
+    /**
+     * <code>string siteType = 11;</code>
+     */
+    java.lang.String getSiteType();
+    /**
+     * <code>string siteType = 11;</code>
+     */
+    com.google.protobuf.ByteString
+        getSiteTypeBytes();
+
+    /**
+     * <code>string startDate = 12;</code>
+     */
+    java.lang.String getStartDate();
+    /**
+     * <code>string startDate = 12;</code>
+     */
+    com.google.protobuf.ByteString
+        getStartDateBytes();
+
+    /**
+     * <code>string endDate = 13;</code>
+     */
+    java.lang.String getEndDate();
+    /**
+     * <code>string endDate = 13;</code>
+     */
+    com.google.protobuf.ByteString
+        getEndDateBytes();
+
+    /**
+     * <code>string packgedFileName = 14;</code>
+     */
+    java.lang.String getPackgedFileName();
+    /**
+     * <code>string packgedFileName = 14;</code>
+     */
+    com.google.protobuf.ByteString
+        getPackgedFileNameBytes();
   }
   /**
    * <pre>
    * Request payload
    * </pre>
    *
-   * Protobuf type {@code com.kkennib.grpc.HelloRequest}
+   * Protobuf type {@code com.kkennib.grpc.KeywordFormat}
    */
-  public  static final class HelloRequest extends
+  public  static final class KeywordFormat extends
       com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:com.kkennib.grpc.HelloRequest)
-      HelloRequestOrBuilder {
+      // @@protoc_insertion_point(message_implements:com.kkennib.grpc.KeywordFormat)
+      KeywordFormatOrBuilder {
   private static final long serialVersionUID = 0L;
-    // Use HelloRequest.newBuilder() to construct.
-    private HelloRequest(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+    // Use KeywordFormat.newBuilder() to construct.
+    private KeywordFormat(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
       super(builder);
     }
-    private HelloRequest() {
-      name_ = "";
-      hobbies_ = com.google.protobuf.LazyStringArrayList.EMPTY;
+    private KeywordFormat() {
+      groupId_ = "";
+      keywords_ = "";
+      dates_ = "";
+      siteTypes_ = "";
+      currentState_ = "";
+      operators_ = "";
+      topicName_ = "";
+      keyword_ = "";
+      siteType_ = "";
+      startDate_ = "";
+      endDate_ = "";
+      packgedFileName_ = "";
     }
 
     @java.lang.Override
     @SuppressWarnings({"unused"})
     protected java.lang.Object newInstance(
         UnusedPrivateParameter unused) {
-      return new HelloRequest();
+      return new KeywordFormat();
     }
 
     @java.lang.Override
@@ -108,7 +191,7 @@ public final class GreetingServiceOuterClass {
     getUnknownFields() {
       return this.unknownFields;
     }
-    private HelloRequest(
+    private KeywordFormat(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
@@ -116,7 +199,6 @@ public final class GreetingServiceOuterClass {
       if (extensionRegistry == null) {
         throw new java.lang.NullPointerException();
       }
-      int mutable_bitField0_ = 0;
       com.google.protobuf.UnknownFieldSet.Builder unknownFields =
           com.google.protobuf.UnknownFieldSet.newBuilder();
       try {
@@ -130,16 +212,83 @@ public final class GreetingServiceOuterClass {
             case 10: {
               java.lang.String s = input.readStringRequireUtf8();
 
-              name_ = s;
+              groupId_ = s;
               break;
             }
             case 18: {
               java.lang.String s = input.readStringRequireUtf8();
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                hobbies_ = new com.google.protobuf.LazyStringArrayList();
-                mutable_bitField0_ |= 0x00000001;
-              }
-              hobbies_.add(s);
+
+              keywords_ = s;
+              break;
+            }
+            case 26: {
+              java.lang.String s = input.readStringRequireUtf8();
+
+              dates_ = s;
+              break;
+            }
+            case 34: {
+              java.lang.String s = input.readStringRequireUtf8();
+
+              siteTypes_ = s;
+              break;
+            }
+            case 42: {
+              java.lang.String s = input.readStringRequireUtf8();
+
+              currentState_ = s;
+              break;
+            }
+            case 50: {
+              java.lang.String s = input.readStringRequireUtf8();
+
+              operators_ = s;
+              break;
+            }
+            case 56: {
+
+              totalWorkCount_ = input.readInt64();
+              break;
+            }
+            case 64: {
+
+              finishedWorkCount_ = input.readInt64();
+              break;
+            }
+            case 74: {
+              java.lang.String s = input.readStringRequireUtf8();
+
+              topicName_ = s;
+              break;
+            }
+            case 82: {
+              java.lang.String s = input.readStringRequireUtf8();
+
+              keyword_ = s;
+              break;
+            }
+            case 90: {
+              java.lang.String s = input.readStringRequireUtf8();
+
+              siteType_ = s;
+              break;
+            }
+            case 98: {
+              java.lang.String s = input.readStringRequireUtf8();
+
+              startDate_ = s;
+              break;
+            }
+            case 106: {
+              java.lang.String s = input.readStringRequireUtf8();
+
+              endDate_ = s;
+              break;
+            }
+            case 114: {
+              java.lang.String s = input.readStringRequireUtf8();
+
+              packgedFileName_ = s;
               break;
             }
             default: {
@@ -157,115 +306,447 @@ public final class GreetingServiceOuterClass {
         throw new com.google.protobuf.InvalidProtocolBufferException(
             e).setUnfinishedMessage(this);
       } finally {
-        if (((mutable_bitField0_ & 0x00000001) != 0)) {
-          hobbies_ = hobbies_.getUnmodifiableView();
-        }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
       }
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.kkennib.grpc.GreetingServiceOuterClass.internal_static_com_kkennib_grpc_HelloRequest_descriptor;
+      return com.kkennib.grpc.GreetingServiceOuterClass.internal_static_com_kkennib_grpc_KeywordFormat_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.kkennib.grpc.GreetingServiceOuterClass.internal_static_com_kkennib_grpc_HelloRequest_fieldAccessorTable
+      return com.kkennib.grpc.GreetingServiceOuterClass.internal_static_com_kkennib_grpc_KeywordFormat_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.kkennib.grpc.GreetingServiceOuterClass.HelloRequest.class, com.kkennib.grpc.GreetingServiceOuterClass.HelloRequest.Builder.class);
+              com.kkennib.grpc.GreetingServiceOuterClass.KeywordFormat.class, com.kkennib.grpc.GreetingServiceOuterClass.KeywordFormat.Builder.class);
     }
 
-    public static final int NAME_FIELD_NUMBER = 1;
-    private volatile java.lang.Object name_;
+    public static final int GROUPID_FIELD_NUMBER = 1;
+    private volatile java.lang.Object groupId_;
     /**
-     * <pre>
-     * Each message attribute is strongly typed.
-     * You also must assign a "tag" number.
-     * Each tag number is unique within the message.
-     * </pre>
-     *
-     * <code>string name = 1;</code>
+     * <code>string groupId = 1;</code>
      */
-    public java.lang.String getName() {
-      java.lang.Object ref = name_;
+    public java.lang.String getGroupId() {
+      java.lang.Object ref = groupId_;
       if (ref instanceof java.lang.String) {
         return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
-        name_ = s;
+        groupId_ = s;
         return s;
       }
     }
     /**
-     * <pre>
-     * Each message attribute is strongly typed.
-     * You also must assign a "tag" number.
-     * Each tag number is unique within the message.
-     * </pre>
-     *
-     * <code>string name = 1;</code>
+     * <code>string groupId = 1;</code>
      */
     public com.google.protobuf.ByteString
-        getNameBytes() {
-      java.lang.Object ref = name_;
+        getGroupIdBytes() {
+      java.lang.Object ref = groupId_;
       if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
                 (java.lang.String) ref);
-        name_ = b;
+        groupId_ = b;
         return b;
       } else {
         return (com.google.protobuf.ByteString) ref;
       }
     }
 
-    public static final int HOBBIES_FIELD_NUMBER = 2;
-    private com.google.protobuf.LazyStringList hobbies_;
+    public static final int KEYWORDS_FIELD_NUMBER = 2;
+    private volatile java.lang.Object keywords_;
     /**
-     * <pre>
-     * This defines a strongly typed list of String
-     * </pre>
-     *
-     * <code>repeated string hobbies = 2;</code>
+     * <code>string keywords = 2;</code>
      */
-    public com.google.protobuf.ProtocolStringList
-        getHobbiesList() {
-      return hobbies_;
+    public java.lang.String getKeywords() {
+      java.lang.Object ref = keywords_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        keywords_ = s;
+        return s;
+      }
     }
     /**
-     * <pre>
-     * This defines a strongly typed list of String
-     * </pre>
-     *
-     * <code>repeated string hobbies = 2;</code>
-     */
-    public int getHobbiesCount() {
-      return hobbies_.size();
-    }
-    /**
-     * <pre>
-     * This defines a strongly typed list of String
-     * </pre>
-     *
-     * <code>repeated string hobbies = 2;</code>
-     */
-    public java.lang.String getHobbies(int index) {
-      return hobbies_.get(index);
-    }
-    /**
-     * <pre>
-     * This defines a strongly typed list of String
-     * </pre>
-     *
-     * <code>repeated string hobbies = 2;</code>
+     * <code>string keywords = 2;</code>
      */
     public com.google.protobuf.ByteString
-        getHobbiesBytes(int index) {
-      return hobbies_.getByteString(index);
+        getKeywordsBytes() {
+      java.lang.Object ref = keywords_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        keywords_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    public static final int DATES_FIELD_NUMBER = 3;
+    private volatile java.lang.Object dates_;
+    /**
+     * <code>string dates = 3;</code>
+     */
+    public java.lang.String getDates() {
+      java.lang.Object ref = dates_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        dates_ = s;
+        return s;
+      }
+    }
+    /**
+     * <code>string dates = 3;</code>
+     */
+    public com.google.protobuf.ByteString
+        getDatesBytes() {
+      java.lang.Object ref = dates_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        dates_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    public static final int SITETYPES_FIELD_NUMBER = 4;
+    private volatile java.lang.Object siteTypes_;
+    /**
+     * <code>string siteTypes = 4;</code>
+     */
+    public java.lang.String getSiteTypes() {
+      java.lang.Object ref = siteTypes_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        siteTypes_ = s;
+        return s;
+      }
+    }
+    /**
+     * <code>string siteTypes = 4;</code>
+     */
+    public com.google.protobuf.ByteString
+        getSiteTypesBytes() {
+      java.lang.Object ref = siteTypes_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        siteTypes_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    public static final int CURRENTSTATE_FIELD_NUMBER = 5;
+    private volatile java.lang.Object currentState_;
+    /**
+     * <code>string currentState = 5;</code>
+     */
+    public java.lang.String getCurrentState() {
+      java.lang.Object ref = currentState_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        currentState_ = s;
+        return s;
+      }
+    }
+    /**
+     * <code>string currentState = 5;</code>
+     */
+    public com.google.protobuf.ByteString
+        getCurrentStateBytes() {
+      java.lang.Object ref = currentState_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        currentState_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    public static final int OPERATORS_FIELD_NUMBER = 6;
+    private volatile java.lang.Object operators_;
+    /**
+     * <code>string operators = 6;</code>
+     */
+    public java.lang.String getOperators() {
+      java.lang.Object ref = operators_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        operators_ = s;
+        return s;
+      }
+    }
+    /**
+     * <code>string operators = 6;</code>
+     */
+    public com.google.protobuf.ByteString
+        getOperatorsBytes() {
+      java.lang.Object ref = operators_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        operators_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    public static final int TOTALWORKCOUNT_FIELD_NUMBER = 7;
+    private long totalWorkCount_;
+    /**
+     * <code>int64 totalWorkCount = 7;</code>
+     */
+    public long getTotalWorkCount() {
+      return totalWorkCount_;
+    }
+
+    public static final int FINISHEDWORKCOUNT_FIELD_NUMBER = 8;
+    private long finishedWorkCount_;
+    /**
+     * <code>int64 finishedWorkCount = 8;</code>
+     */
+    public long getFinishedWorkCount() {
+      return finishedWorkCount_;
+    }
+
+    public static final int TOPICNAME_FIELD_NUMBER = 9;
+    private volatile java.lang.Object topicName_;
+    /**
+     * <code>string topicName = 9;</code>
+     */
+    public java.lang.String getTopicName() {
+      java.lang.Object ref = topicName_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        topicName_ = s;
+        return s;
+      }
+    }
+    /**
+     * <code>string topicName = 9;</code>
+     */
+    public com.google.protobuf.ByteString
+        getTopicNameBytes() {
+      java.lang.Object ref = topicName_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        topicName_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    public static final int KEYWORD_FIELD_NUMBER = 10;
+    private volatile java.lang.Object keyword_;
+    /**
+     * <code>string keyword = 10;</code>
+     */
+    public java.lang.String getKeyword() {
+      java.lang.Object ref = keyword_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        keyword_ = s;
+        return s;
+      }
+    }
+    /**
+     * <code>string keyword = 10;</code>
+     */
+    public com.google.protobuf.ByteString
+        getKeywordBytes() {
+      java.lang.Object ref = keyword_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        keyword_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    public static final int SITETYPE_FIELD_NUMBER = 11;
+    private volatile java.lang.Object siteType_;
+    /**
+     * <code>string siteType = 11;</code>
+     */
+    public java.lang.String getSiteType() {
+      java.lang.Object ref = siteType_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        siteType_ = s;
+        return s;
+      }
+    }
+    /**
+     * <code>string siteType = 11;</code>
+     */
+    public com.google.protobuf.ByteString
+        getSiteTypeBytes() {
+      java.lang.Object ref = siteType_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        siteType_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    public static final int STARTDATE_FIELD_NUMBER = 12;
+    private volatile java.lang.Object startDate_;
+    /**
+     * <code>string startDate = 12;</code>
+     */
+    public java.lang.String getStartDate() {
+      java.lang.Object ref = startDate_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        startDate_ = s;
+        return s;
+      }
+    }
+    /**
+     * <code>string startDate = 12;</code>
+     */
+    public com.google.protobuf.ByteString
+        getStartDateBytes() {
+      java.lang.Object ref = startDate_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        startDate_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    public static final int ENDDATE_FIELD_NUMBER = 13;
+    private volatile java.lang.Object endDate_;
+    /**
+     * <code>string endDate = 13;</code>
+     */
+    public java.lang.String getEndDate() {
+      java.lang.Object ref = endDate_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        endDate_ = s;
+        return s;
+      }
+    }
+    /**
+     * <code>string endDate = 13;</code>
+     */
+    public com.google.protobuf.ByteString
+        getEndDateBytes() {
+      java.lang.Object ref = endDate_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        endDate_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    public static final int PACKGEDFILENAME_FIELD_NUMBER = 14;
+    private volatile java.lang.Object packgedFileName_;
+    /**
+     * <code>string packgedFileName = 14;</code>
+     */
+    public java.lang.String getPackgedFileName() {
+      java.lang.Object ref = packgedFileName_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        packgedFileName_ = s;
+        return s;
+      }
+    }
+    /**
+     * <code>string packgedFileName = 14;</code>
+     */
+    public com.google.protobuf.ByteString
+        getPackgedFileNameBytes() {
+      java.lang.Object ref = packgedFileName_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        packgedFileName_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
     }
 
     private byte memoizedIsInitialized = -1;
@@ -282,11 +763,47 @@ public final class GreetingServiceOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (!getNameBytes().isEmpty()) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 1, name_);
+      if (!getGroupIdBytes().isEmpty()) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 1, groupId_);
       }
-      for (int i = 0; i < hobbies_.size(); i++) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 2, hobbies_.getRaw(i));
+      if (!getKeywordsBytes().isEmpty()) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 2, keywords_);
+      }
+      if (!getDatesBytes().isEmpty()) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 3, dates_);
+      }
+      if (!getSiteTypesBytes().isEmpty()) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 4, siteTypes_);
+      }
+      if (!getCurrentStateBytes().isEmpty()) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 5, currentState_);
+      }
+      if (!getOperatorsBytes().isEmpty()) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 6, operators_);
+      }
+      if (totalWorkCount_ != 0L) {
+        output.writeInt64(7, totalWorkCount_);
+      }
+      if (finishedWorkCount_ != 0L) {
+        output.writeInt64(8, finishedWorkCount_);
+      }
+      if (!getTopicNameBytes().isEmpty()) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 9, topicName_);
+      }
+      if (!getKeywordBytes().isEmpty()) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 10, keyword_);
+      }
+      if (!getSiteTypeBytes().isEmpty()) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 11, siteType_);
+      }
+      if (!getStartDateBytes().isEmpty()) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 12, startDate_);
+      }
+      if (!getEndDateBytes().isEmpty()) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 13, endDate_);
+      }
+      if (!getPackgedFileNameBytes().isEmpty()) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 14, packgedFileName_);
       }
       unknownFields.writeTo(output);
     }
@@ -297,16 +814,49 @@ public final class GreetingServiceOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (!getNameBytes().isEmpty()) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, name_);
+      if (!getGroupIdBytes().isEmpty()) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, groupId_);
       }
-      {
-        int dataSize = 0;
-        for (int i = 0; i < hobbies_.size(); i++) {
-          dataSize += computeStringSizeNoTag(hobbies_.getRaw(i));
-        }
-        size += dataSize;
-        size += 1 * getHobbiesList().size();
+      if (!getKeywordsBytes().isEmpty()) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, keywords_);
+      }
+      if (!getDatesBytes().isEmpty()) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(3, dates_);
+      }
+      if (!getSiteTypesBytes().isEmpty()) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(4, siteTypes_);
+      }
+      if (!getCurrentStateBytes().isEmpty()) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(5, currentState_);
+      }
+      if (!getOperatorsBytes().isEmpty()) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(6, operators_);
+      }
+      if (totalWorkCount_ != 0L) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt64Size(7, totalWorkCount_);
+      }
+      if (finishedWorkCount_ != 0L) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt64Size(8, finishedWorkCount_);
+      }
+      if (!getTopicNameBytes().isEmpty()) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(9, topicName_);
+      }
+      if (!getKeywordBytes().isEmpty()) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(10, keyword_);
+      }
+      if (!getSiteTypeBytes().isEmpty()) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(11, siteType_);
+      }
+      if (!getStartDateBytes().isEmpty()) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(12, startDate_);
+      }
+      if (!getEndDateBytes().isEmpty()) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(13, endDate_);
+      }
+      if (!getPackgedFileNameBytes().isEmpty()) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(14, packgedFileName_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -318,15 +868,39 @@ public final class GreetingServiceOuterClass {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof com.kkennib.grpc.GreetingServiceOuterClass.HelloRequest)) {
+      if (!(obj instanceof com.kkennib.grpc.GreetingServiceOuterClass.KeywordFormat)) {
         return super.equals(obj);
       }
-      com.kkennib.grpc.GreetingServiceOuterClass.HelloRequest other = (com.kkennib.grpc.GreetingServiceOuterClass.HelloRequest) obj;
+      com.kkennib.grpc.GreetingServiceOuterClass.KeywordFormat other = (com.kkennib.grpc.GreetingServiceOuterClass.KeywordFormat) obj;
 
-      if (!getName()
-          .equals(other.getName())) return false;
-      if (!getHobbiesList()
-          .equals(other.getHobbiesList())) return false;
+      if (!getGroupId()
+          .equals(other.getGroupId())) return false;
+      if (!getKeywords()
+          .equals(other.getKeywords())) return false;
+      if (!getDates()
+          .equals(other.getDates())) return false;
+      if (!getSiteTypes()
+          .equals(other.getSiteTypes())) return false;
+      if (!getCurrentState()
+          .equals(other.getCurrentState())) return false;
+      if (!getOperators()
+          .equals(other.getOperators())) return false;
+      if (getTotalWorkCount()
+          != other.getTotalWorkCount()) return false;
+      if (getFinishedWorkCount()
+          != other.getFinishedWorkCount()) return false;
+      if (!getTopicName()
+          .equals(other.getTopicName())) return false;
+      if (!getKeyword()
+          .equals(other.getKeyword())) return false;
+      if (!getSiteType()
+          .equals(other.getSiteType())) return false;
+      if (!getStartDate()
+          .equals(other.getStartDate())) return false;
+      if (!getEndDate()
+          .equals(other.getEndDate())) return false;
+      if (!getPackgedFileName()
+          .equals(other.getPackgedFileName())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -338,80 +912,104 @@ public final class GreetingServiceOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + NAME_FIELD_NUMBER;
-      hash = (53 * hash) + getName().hashCode();
-      if (getHobbiesCount() > 0) {
-        hash = (37 * hash) + HOBBIES_FIELD_NUMBER;
-        hash = (53 * hash) + getHobbiesList().hashCode();
-      }
+      hash = (37 * hash) + GROUPID_FIELD_NUMBER;
+      hash = (53 * hash) + getGroupId().hashCode();
+      hash = (37 * hash) + KEYWORDS_FIELD_NUMBER;
+      hash = (53 * hash) + getKeywords().hashCode();
+      hash = (37 * hash) + DATES_FIELD_NUMBER;
+      hash = (53 * hash) + getDates().hashCode();
+      hash = (37 * hash) + SITETYPES_FIELD_NUMBER;
+      hash = (53 * hash) + getSiteTypes().hashCode();
+      hash = (37 * hash) + CURRENTSTATE_FIELD_NUMBER;
+      hash = (53 * hash) + getCurrentState().hashCode();
+      hash = (37 * hash) + OPERATORS_FIELD_NUMBER;
+      hash = (53 * hash) + getOperators().hashCode();
+      hash = (37 * hash) + TOTALWORKCOUNT_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
+          getTotalWorkCount());
+      hash = (37 * hash) + FINISHEDWORKCOUNT_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
+          getFinishedWorkCount());
+      hash = (37 * hash) + TOPICNAME_FIELD_NUMBER;
+      hash = (53 * hash) + getTopicName().hashCode();
+      hash = (37 * hash) + KEYWORD_FIELD_NUMBER;
+      hash = (53 * hash) + getKeyword().hashCode();
+      hash = (37 * hash) + SITETYPE_FIELD_NUMBER;
+      hash = (53 * hash) + getSiteType().hashCode();
+      hash = (37 * hash) + STARTDATE_FIELD_NUMBER;
+      hash = (53 * hash) + getStartDate().hashCode();
+      hash = (37 * hash) + ENDDATE_FIELD_NUMBER;
+      hash = (53 * hash) + getEndDate().hashCode();
+      hash = (37 * hash) + PACKGEDFILENAME_FIELD_NUMBER;
+      hash = (53 * hash) + getPackgedFileName().hashCode();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
     }
 
-    public static com.kkennib.grpc.GreetingServiceOuterClass.HelloRequest parseFrom(
+    public static com.kkennib.grpc.GreetingServiceOuterClass.KeywordFormat parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.kkennib.grpc.GreetingServiceOuterClass.HelloRequest parseFrom(
+    public static com.kkennib.grpc.GreetingServiceOuterClass.KeywordFormat parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.kkennib.grpc.GreetingServiceOuterClass.HelloRequest parseFrom(
+    public static com.kkennib.grpc.GreetingServiceOuterClass.KeywordFormat parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.kkennib.grpc.GreetingServiceOuterClass.HelloRequest parseFrom(
+    public static com.kkennib.grpc.GreetingServiceOuterClass.KeywordFormat parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.kkennib.grpc.GreetingServiceOuterClass.HelloRequest parseFrom(byte[] data)
+    public static com.kkennib.grpc.GreetingServiceOuterClass.KeywordFormat parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.kkennib.grpc.GreetingServiceOuterClass.HelloRequest parseFrom(
+    public static com.kkennib.grpc.GreetingServiceOuterClass.KeywordFormat parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.kkennib.grpc.GreetingServiceOuterClass.HelloRequest parseFrom(java.io.InputStream input)
+    public static com.kkennib.grpc.GreetingServiceOuterClass.KeywordFormat parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static com.kkennib.grpc.GreetingServiceOuterClass.HelloRequest parseFrom(
+    public static com.kkennib.grpc.GreetingServiceOuterClass.KeywordFormat parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-    public static com.kkennib.grpc.GreetingServiceOuterClass.HelloRequest parseDelimitedFrom(java.io.InputStream input)
+    public static com.kkennib.grpc.GreetingServiceOuterClass.KeywordFormat parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-    public static com.kkennib.grpc.GreetingServiceOuterClass.HelloRequest parseDelimitedFrom(
+    public static com.kkennib.grpc.GreetingServiceOuterClass.KeywordFormat parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static com.kkennib.grpc.GreetingServiceOuterClass.HelloRequest parseFrom(
+    public static com.kkennib.grpc.GreetingServiceOuterClass.KeywordFormat parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static com.kkennib.grpc.GreetingServiceOuterClass.HelloRequest parseFrom(
+    public static com.kkennib.grpc.GreetingServiceOuterClass.KeywordFormat parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -424,7 +1022,7 @@ public final class GreetingServiceOuterClass {
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(com.kkennib.grpc.GreetingServiceOuterClass.HelloRequest prototype) {
+    public static Builder newBuilder(com.kkennib.grpc.GreetingServiceOuterClass.KeywordFormat prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
     @java.lang.Override
@@ -444,26 +1042,26 @@ public final class GreetingServiceOuterClass {
      * Request payload
      * </pre>
      *
-     * Protobuf type {@code com.kkennib.grpc.HelloRequest}
+     * Protobuf type {@code com.kkennib.grpc.KeywordFormat}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:com.kkennib.grpc.HelloRequest)
-        com.kkennib.grpc.GreetingServiceOuterClass.HelloRequestOrBuilder {
+        // @@protoc_insertion_point(builder_implements:com.kkennib.grpc.KeywordFormat)
+        com.kkennib.grpc.GreetingServiceOuterClass.KeywordFormatOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.kkennib.grpc.GreetingServiceOuterClass.internal_static_com_kkennib_grpc_HelloRequest_descriptor;
+        return com.kkennib.grpc.GreetingServiceOuterClass.internal_static_com_kkennib_grpc_KeywordFormat_descriptor;
       }
 
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.kkennib.grpc.GreetingServiceOuterClass.internal_static_com_kkennib_grpc_HelloRequest_fieldAccessorTable
+        return com.kkennib.grpc.GreetingServiceOuterClass.internal_static_com_kkennib_grpc_KeywordFormat_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                com.kkennib.grpc.GreetingServiceOuterClass.HelloRequest.class, com.kkennib.grpc.GreetingServiceOuterClass.HelloRequest.Builder.class);
+                com.kkennib.grpc.GreetingServiceOuterClass.KeywordFormat.class, com.kkennib.grpc.GreetingServiceOuterClass.KeywordFormat.Builder.class);
       }
 
-      // Construct using com.kkennib.grpc.GreetingServiceOuterClass.HelloRequest.newBuilder()
+      // Construct using com.kkennib.grpc.GreetingServiceOuterClass.KeywordFormat.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
@@ -481,27 +1079,51 @@ public final class GreetingServiceOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        name_ = "";
+        groupId_ = "";
 
-        hobbies_ = com.google.protobuf.LazyStringArrayList.EMPTY;
-        bitField0_ = (bitField0_ & ~0x00000001);
+        keywords_ = "";
+
+        dates_ = "";
+
+        siteTypes_ = "";
+
+        currentState_ = "";
+
+        operators_ = "";
+
+        totalWorkCount_ = 0L;
+
+        finishedWorkCount_ = 0L;
+
+        topicName_ = "";
+
+        keyword_ = "";
+
+        siteType_ = "";
+
+        startDate_ = "";
+
+        endDate_ = "";
+
+        packgedFileName_ = "";
+
         return this;
       }
 
       @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return com.kkennib.grpc.GreetingServiceOuterClass.internal_static_com_kkennib_grpc_HelloRequest_descriptor;
+        return com.kkennib.grpc.GreetingServiceOuterClass.internal_static_com_kkennib_grpc_KeywordFormat_descriptor;
       }
 
       @java.lang.Override
-      public com.kkennib.grpc.GreetingServiceOuterClass.HelloRequest getDefaultInstanceForType() {
-        return com.kkennib.grpc.GreetingServiceOuterClass.HelloRequest.getDefaultInstance();
+      public com.kkennib.grpc.GreetingServiceOuterClass.KeywordFormat getDefaultInstanceForType() {
+        return com.kkennib.grpc.GreetingServiceOuterClass.KeywordFormat.getDefaultInstance();
       }
 
       @java.lang.Override
-      public com.kkennib.grpc.GreetingServiceOuterClass.HelloRequest build() {
-        com.kkennib.grpc.GreetingServiceOuterClass.HelloRequest result = buildPartial();
+      public com.kkennib.grpc.GreetingServiceOuterClass.KeywordFormat build() {
+        com.kkennib.grpc.GreetingServiceOuterClass.KeywordFormat result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
@@ -509,15 +1131,22 @@ public final class GreetingServiceOuterClass {
       }
 
       @java.lang.Override
-      public com.kkennib.grpc.GreetingServiceOuterClass.HelloRequest buildPartial() {
-        com.kkennib.grpc.GreetingServiceOuterClass.HelloRequest result = new com.kkennib.grpc.GreetingServiceOuterClass.HelloRequest(this);
-        int from_bitField0_ = bitField0_;
-        result.name_ = name_;
-        if (((bitField0_ & 0x00000001) != 0)) {
-          hobbies_ = hobbies_.getUnmodifiableView();
-          bitField0_ = (bitField0_ & ~0x00000001);
-        }
-        result.hobbies_ = hobbies_;
+      public com.kkennib.grpc.GreetingServiceOuterClass.KeywordFormat buildPartial() {
+        com.kkennib.grpc.GreetingServiceOuterClass.KeywordFormat result = new com.kkennib.grpc.GreetingServiceOuterClass.KeywordFormat(this);
+        result.groupId_ = groupId_;
+        result.keywords_ = keywords_;
+        result.dates_ = dates_;
+        result.siteTypes_ = siteTypes_;
+        result.currentState_ = currentState_;
+        result.operators_ = operators_;
+        result.totalWorkCount_ = totalWorkCount_;
+        result.finishedWorkCount_ = finishedWorkCount_;
+        result.topicName_ = topicName_;
+        result.keyword_ = keyword_;
+        result.siteType_ = siteType_;
+        result.startDate_ = startDate_;
+        result.endDate_ = endDate_;
+        result.packgedFileName_ = packgedFileName_;
         onBuilt();
         return result;
       }
@@ -556,28 +1185,68 @@ public final class GreetingServiceOuterClass {
       }
       @java.lang.Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof com.kkennib.grpc.GreetingServiceOuterClass.HelloRequest) {
-          return mergeFrom((com.kkennib.grpc.GreetingServiceOuterClass.HelloRequest)other);
+        if (other instanceof com.kkennib.grpc.GreetingServiceOuterClass.KeywordFormat) {
+          return mergeFrom((com.kkennib.grpc.GreetingServiceOuterClass.KeywordFormat)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(com.kkennib.grpc.GreetingServiceOuterClass.HelloRequest other) {
-        if (other == com.kkennib.grpc.GreetingServiceOuterClass.HelloRequest.getDefaultInstance()) return this;
-        if (!other.getName().isEmpty()) {
-          name_ = other.name_;
+      public Builder mergeFrom(com.kkennib.grpc.GreetingServiceOuterClass.KeywordFormat other) {
+        if (other == com.kkennib.grpc.GreetingServiceOuterClass.KeywordFormat.getDefaultInstance()) return this;
+        if (!other.getGroupId().isEmpty()) {
+          groupId_ = other.groupId_;
           onChanged();
         }
-        if (!other.hobbies_.isEmpty()) {
-          if (hobbies_.isEmpty()) {
-            hobbies_ = other.hobbies_;
-            bitField0_ = (bitField0_ & ~0x00000001);
-          } else {
-            ensureHobbiesIsMutable();
-            hobbies_.addAll(other.hobbies_);
-          }
+        if (!other.getKeywords().isEmpty()) {
+          keywords_ = other.keywords_;
+          onChanged();
+        }
+        if (!other.getDates().isEmpty()) {
+          dates_ = other.dates_;
+          onChanged();
+        }
+        if (!other.getSiteTypes().isEmpty()) {
+          siteTypes_ = other.siteTypes_;
+          onChanged();
+        }
+        if (!other.getCurrentState().isEmpty()) {
+          currentState_ = other.currentState_;
+          onChanged();
+        }
+        if (!other.getOperators().isEmpty()) {
+          operators_ = other.operators_;
+          onChanged();
+        }
+        if (other.getTotalWorkCount() != 0L) {
+          setTotalWorkCount(other.getTotalWorkCount());
+        }
+        if (other.getFinishedWorkCount() != 0L) {
+          setFinishedWorkCount(other.getFinishedWorkCount());
+        }
+        if (!other.getTopicName().isEmpty()) {
+          topicName_ = other.topicName_;
+          onChanged();
+        }
+        if (!other.getKeyword().isEmpty()) {
+          keyword_ = other.keyword_;
+          onChanged();
+        }
+        if (!other.getSiteType().isEmpty()) {
+          siteType_ = other.siteType_;
+          onChanged();
+        }
+        if (!other.getStartDate().isEmpty()) {
+          startDate_ = other.startDate_;
+          onChanged();
+        }
+        if (!other.getEndDate().isEmpty()) {
+          endDate_ = other.endDate_;
+          onChanged();
+        }
+        if (!other.getPackgedFileName().isEmpty()) {
+          packgedFileName_ = other.packgedFileName_;
           onChanged();
         }
         this.mergeUnknownFields(other.unknownFields);
@@ -595,11 +1264,11 @@ public final class GreetingServiceOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        com.kkennib.grpc.GreetingServiceOuterClass.HelloRequest parsedMessage = null;
+        com.kkennib.grpc.GreetingServiceOuterClass.KeywordFormat parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (com.kkennib.grpc.GreetingServiceOuterClass.HelloRequest) e.getUnfinishedMessage();
+          parsedMessage = (com.kkennib.grpc.GreetingServiceOuterClass.KeywordFormat) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
           if (parsedMessage != null) {
@@ -608,233 +1277,883 @@ public final class GreetingServiceOuterClass {
         }
         return this;
       }
-      private int bitField0_;
 
-      private java.lang.Object name_ = "";
+      private java.lang.Object groupId_ = "";
       /**
-       * <pre>
-       * Each message attribute is strongly typed.
-       * You also must assign a "tag" number.
-       * Each tag number is unique within the message.
-       * </pre>
-       *
-       * <code>string name = 1;</code>
+       * <code>string groupId = 1;</code>
        */
-      public java.lang.String getName() {
-        java.lang.Object ref = name_;
+      public java.lang.String getGroupId() {
+        java.lang.Object ref = groupId_;
         if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
           java.lang.String s = bs.toStringUtf8();
-          name_ = s;
+          groupId_ = s;
           return s;
         } else {
           return (java.lang.String) ref;
         }
       }
       /**
-       * <pre>
-       * Each message attribute is strongly typed.
-       * You also must assign a "tag" number.
-       * Each tag number is unique within the message.
-       * </pre>
-       *
-       * <code>string name = 1;</code>
+       * <code>string groupId = 1;</code>
        */
       public com.google.protobuf.ByteString
-          getNameBytes() {
-        java.lang.Object ref = name_;
+          getGroupIdBytes() {
+        java.lang.Object ref = groupId_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
                   (java.lang.String) ref);
-          name_ = b;
+          groupId_ = b;
           return b;
         } else {
           return (com.google.protobuf.ByteString) ref;
         }
       }
       /**
-       * <pre>
-       * Each message attribute is strongly typed.
-       * You also must assign a "tag" number.
-       * Each tag number is unique within the message.
-       * </pre>
-       *
-       * <code>string name = 1;</code>
+       * <code>string groupId = 1;</code>
        */
-      public Builder setName(
+      public Builder setGroupId(
           java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
   
-        name_ = value;
+        groupId_ = value;
         onChanged();
         return this;
       }
       /**
-       * <pre>
-       * Each message attribute is strongly typed.
-       * You also must assign a "tag" number.
-       * Each tag number is unique within the message.
-       * </pre>
-       *
-       * <code>string name = 1;</code>
+       * <code>string groupId = 1;</code>
        */
-      public Builder clearName() {
+      public Builder clearGroupId() {
         
-        name_ = getDefaultInstance().getName();
+        groupId_ = getDefaultInstance().getGroupId();
         onChanged();
         return this;
       }
       /**
-       * <pre>
-       * Each message attribute is strongly typed.
-       * You also must assign a "tag" number.
-       * Each tag number is unique within the message.
-       * </pre>
-       *
-       * <code>string name = 1;</code>
+       * <code>string groupId = 1;</code>
        */
-      public Builder setNameBytes(
+      public Builder setGroupIdBytes(
           com.google.protobuf.ByteString value) {
         if (value == null) {
     throw new NullPointerException();
   }
   checkByteStringIsUtf8(value);
         
-        name_ = value;
+        groupId_ = value;
         onChanged();
         return this;
       }
 
-      private com.google.protobuf.LazyStringList hobbies_ = com.google.protobuf.LazyStringArrayList.EMPTY;
-      private void ensureHobbiesIsMutable() {
-        if (!((bitField0_ & 0x00000001) != 0)) {
-          hobbies_ = new com.google.protobuf.LazyStringArrayList(hobbies_);
-          bitField0_ |= 0x00000001;
-         }
-      }
+      private java.lang.Object keywords_ = "";
       /**
-       * <pre>
-       * This defines a strongly typed list of String
-       * </pre>
-       *
-       * <code>repeated string hobbies = 2;</code>
+       * <code>string keywords = 2;</code>
        */
-      public com.google.protobuf.ProtocolStringList
-          getHobbiesList() {
-        return hobbies_.getUnmodifiableView();
+      public java.lang.String getKeywords() {
+        java.lang.Object ref = keywords_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          keywords_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
       }
       /**
-       * <pre>
-       * This defines a strongly typed list of String
-       * </pre>
-       *
-       * <code>repeated string hobbies = 2;</code>
-       */
-      public int getHobbiesCount() {
-        return hobbies_.size();
-      }
-      /**
-       * <pre>
-       * This defines a strongly typed list of String
-       * </pre>
-       *
-       * <code>repeated string hobbies = 2;</code>
-       */
-      public java.lang.String getHobbies(int index) {
-        return hobbies_.get(index);
-      }
-      /**
-       * <pre>
-       * This defines a strongly typed list of String
-       * </pre>
-       *
-       * <code>repeated string hobbies = 2;</code>
+       * <code>string keywords = 2;</code>
        */
       public com.google.protobuf.ByteString
-          getHobbiesBytes(int index) {
-        return hobbies_.getByteString(index);
+          getKeywordsBytes() {
+        java.lang.Object ref = keywords_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          keywords_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
       }
       /**
-       * <pre>
-       * This defines a strongly typed list of String
-       * </pre>
-       *
-       * <code>repeated string hobbies = 2;</code>
+       * <code>string keywords = 2;</code>
        */
-      public Builder setHobbies(
-          int index, java.lang.String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  ensureHobbiesIsMutable();
-        hobbies_.set(index, value);
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       * This defines a strongly typed list of String
-       * </pre>
-       *
-       * <code>repeated string hobbies = 2;</code>
-       */
-      public Builder addHobbies(
+      public Builder setKeywords(
           java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
-  ensureHobbiesIsMutable();
-        hobbies_.add(value);
+  
+        keywords_ = value;
         onChanged();
         return this;
       }
       /**
-       * <pre>
-       * This defines a strongly typed list of String
-       * </pre>
-       *
-       * <code>repeated string hobbies = 2;</code>
+       * <code>string keywords = 2;</code>
        */
-      public Builder addAllHobbies(
-          java.lang.Iterable<java.lang.String> values) {
-        ensureHobbiesIsMutable();
-        com.google.protobuf.AbstractMessageLite.Builder.addAll(
-            values, hobbies_);
+      public Builder clearKeywords() {
+        
+        keywords_ = getDefaultInstance().getKeywords();
         onChanged();
         return this;
       }
       /**
-       * <pre>
-       * This defines a strongly typed list of String
-       * </pre>
-       *
-       * <code>repeated string hobbies = 2;</code>
+       * <code>string keywords = 2;</code>
        */
-      public Builder clearHobbies() {
-        hobbies_ = com.google.protobuf.LazyStringArrayList.EMPTY;
-        bitField0_ = (bitField0_ & ~0x00000001);
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       * This defines a strongly typed list of String
-       * </pre>
-       *
-       * <code>repeated string hobbies = 2;</code>
-       */
-      public Builder addHobbiesBytes(
+      public Builder setKeywordsBytes(
           com.google.protobuf.ByteString value) {
         if (value == null) {
     throw new NullPointerException();
   }
   checkByteStringIsUtf8(value);
-        ensureHobbiesIsMutable();
-        hobbies_.add(value);
+        
+        keywords_ = value;
+        onChanged();
+        return this;
+      }
+
+      private java.lang.Object dates_ = "";
+      /**
+       * <code>string dates = 3;</code>
+       */
+      public java.lang.String getDates() {
+        java.lang.Object ref = dates_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          dates_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>string dates = 3;</code>
+       */
+      public com.google.protobuf.ByteString
+          getDatesBytes() {
+        java.lang.Object ref = dates_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          dates_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>string dates = 3;</code>
+       */
+      public Builder setDates(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  
+        dates_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string dates = 3;</code>
+       */
+      public Builder clearDates() {
+        
+        dates_ = getDefaultInstance().getDates();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string dates = 3;</code>
+       */
+      public Builder setDatesBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+        
+        dates_ = value;
+        onChanged();
+        return this;
+      }
+
+      private java.lang.Object siteTypes_ = "";
+      /**
+       * <code>string siteTypes = 4;</code>
+       */
+      public java.lang.String getSiteTypes() {
+        java.lang.Object ref = siteTypes_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          siteTypes_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>string siteTypes = 4;</code>
+       */
+      public com.google.protobuf.ByteString
+          getSiteTypesBytes() {
+        java.lang.Object ref = siteTypes_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          siteTypes_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>string siteTypes = 4;</code>
+       */
+      public Builder setSiteTypes(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  
+        siteTypes_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string siteTypes = 4;</code>
+       */
+      public Builder clearSiteTypes() {
+        
+        siteTypes_ = getDefaultInstance().getSiteTypes();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string siteTypes = 4;</code>
+       */
+      public Builder setSiteTypesBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+        
+        siteTypes_ = value;
+        onChanged();
+        return this;
+      }
+
+      private java.lang.Object currentState_ = "";
+      /**
+       * <code>string currentState = 5;</code>
+       */
+      public java.lang.String getCurrentState() {
+        java.lang.Object ref = currentState_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          currentState_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>string currentState = 5;</code>
+       */
+      public com.google.protobuf.ByteString
+          getCurrentStateBytes() {
+        java.lang.Object ref = currentState_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          currentState_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>string currentState = 5;</code>
+       */
+      public Builder setCurrentState(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  
+        currentState_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string currentState = 5;</code>
+       */
+      public Builder clearCurrentState() {
+        
+        currentState_ = getDefaultInstance().getCurrentState();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string currentState = 5;</code>
+       */
+      public Builder setCurrentStateBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+        
+        currentState_ = value;
+        onChanged();
+        return this;
+      }
+
+      private java.lang.Object operators_ = "";
+      /**
+       * <code>string operators = 6;</code>
+       */
+      public java.lang.String getOperators() {
+        java.lang.Object ref = operators_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          operators_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>string operators = 6;</code>
+       */
+      public com.google.protobuf.ByteString
+          getOperatorsBytes() {
+        java.lang.Object ref = operators_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          operators_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>string operators = 6;</code>
+       */
+      public Builder setOperators(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  
+        operators_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string operators = 6;</code>
+       */
+      public Builder clearOperators() {
+        
+        operators_ = getDefaultInstance().getOperators();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string operators = 6;</code>
+       */
+      public Builder setOperatorsBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+        
+        operators_ = value;
+        onChanged();
+        return this;
+      }
+
+      private long totalWorkCount_ ;
+      /**
+       * <code>int64 totalWorkCount = 7;</code>
+       */
+      public long getTotalWorkCount() {
+        return totalWorkCount_;
+      }
+      /**
+       * <code>int64 totalWorkCount = 7;</code>
+       */
+      public Builder setTotalWorkCount(long value) {
+        
+        totalWorkCount_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>int64 totalWorkCount = 7;</code>
+       */
+      public Builder clearTotalWorkCount() {
+        
+        totalWorkCount_ = 0L;
+        onChanged();
+        return this;
+      }
+
+      private long finishedWorkCount_ ;
+      /**
+       * <code>int64 finishedWorkCount = 8;</code>
+       */
+      public long getFinishedWorkCount() {
+        return finishedWorkCount_;
+      }
+      /**
+       * <code>int64 finishedWorkCount = 8;</code>
+       */
+      public Builder setFinishedWorkCount(long value) {
+        
+        finishedWorkCount_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>int64 finishedWorkCount = 8;</code>
+       */
+      public Builder clearFinishedWorkCount() {
+        
+        finishedWorkCount_ = 0L;
+        onChanged();
+        return this;
+      }
+
+      private java.lang.Object topicName_ = "";
+      /**
+       * <code>string topicName = 9;</code>
+       */
+      public java.lang.String getTopicName() {
+        java.lang.Object ref = topicName_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          topicName_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>string topicName = 9;</code>
+       */
+      public com.google.protobuf.ByteString
+          getTopicNameBytes() {
+        java.lang.Object ref = topicName_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          topicName_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>string topicName = 9;</code>
+       */
+      public Builder setTopicName(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  
+        topicName_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string topicName = 9;</code>
+       */
+      public Builder clearTopicName() {
+        
+        topicName_ = getDefaultInstance().getTopicName();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string topicName = 9;</code>
+       */
+      public Builder setTopicNameBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+        
+        topicName_ = value;
+        onChanged();
+        return this;
+      }
+
+      private java.lang.Object keyword_ = "";
+      /**
+       * <code>string keyword = 10;</code>
+       */
+      public java.lang.String getKeyword() {
+        java.lang.Object ref = keyword_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          keyword_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>string keyword = 10;</code>
+       */
+      public com.google.protobuf.ByteString
+          getKeywordBytes() {
+        java.lang.Object ref = keyword_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          keyword_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>string keyword = 10;</code>
+       */
+      public Builder setKeyword(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  
+        keyword_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string keyword = 10;</code>
+       */
+      public Builder clearKeyword() {
+        
+        keyword_ = getDefaultInstance().getKeyword();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string keyword = 10;</code>
+       */
+      public Builder setKeywordBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+        
+        keyword_ = value;
+        onChanged();
+        return this;
+      }
+
+      private java.lang.Object siteType_ = "";
+      /**
+       * <code>string siteType = 11;</code>
+       */
+      public java.lang.String getSiteType() {
+        java.lang.Object ref = siteType_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          siteType_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>string siteType = 11;</code>
+       */
+      public com.google.protobuf.ByteString
+          getSiteTypeBytes() {
+        java.lang.Object ref = siteType_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          siteType_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>string siteType = 11;</code>
+       */
+      public Builder setSiteType(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  
+        siteType_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string siteType = 11;</code>
+       */
+      public Builder clearSiteType() {
+        
+        siteType_ = getDefaultInstance().getSiteType();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string siteType = 11;</code>
+       */
+      public Builder setSiteTypeBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+        
+        siteType_ = value;
+        onChanged();
+        return this;
+      }
+
+      private java.lang.Object startDate_ = "";
+      /**
+       * <code>string startDate = 12;</code>
+       */
+      public java.lang.String getStartDate() {
+        java.lang.Object ref = startDate_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          startDate_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>string startDate = 12;</code>
+       */
+      public com.google.protobuf.ByteString
+          getStartDateBytes() {
+        java.lang.Object ref = startDate_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          startDate_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>string startDate = 12;</code>
+       */
+      public Builder setStartDate(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  
+        startDate_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string startDate = 12;</code>
+       */
+      public Builder clearStartDate() {
+        
+        startDate_ = getDefaultInstance().getStartDate();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string startDate = 12;</code>
+       */
+      public Builder setStartDateBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+        
+        startDate_ = value;
+        onChanged();
+        return this;
+      }
+
+      private java.lang.Object endDate_ = "";
+      /**
+       * <code>string endDate = 13;</code>
+       */
+      public java.lang.String getEndDate() {
+        java.lang.Object ref = endDate_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          endDate_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>string endDate = 13;</code>
+       */
+      public com.google.protobuf.ByteString
+          getEndDateBytes() {
+        java.lang.Object ref = endDate_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          endDate_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>string endDate = 13;</code>
+       */
+      public Builder setEndDate(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  
+        endDate_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string endDate = 13;</code>
+       */
+      public Builder clearEndDate() {
+        
+        endDate_ = getDefaultInstance().getEndDate();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string endDate = 13;</code>
+       */
+      public Builder setEndDateBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+        
+        endDate_ = value;
+        onChanged();
+        return this;
+      }
+
+      private java.lang.Object packgedFileName_ = "";
+      /**
+       * <code>string packgedFileName = 14;</code>
+       */
+      public java.lang.String getPackgedFileName() {
+        java.lang.Object ref = packgedFileName_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          packgedFileName_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>string packgedFileName = 14;</code>
+       */
+      public com.google.protobuf.ByteString
+          getPackgedFileNameBytes() {
+        java.lang.Object ref = packgedFileName_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          packgedFileName_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>string packgedFileName = 14;</code>
+       */
+      public Builder setPackgedFileName(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  
+        packgedFileName_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string packgedFileName = 14;</code>
+       */
+      public Builder clearPackgedFileName() {
+        
+        packgedFileName_ = getDefaultInstance().getPackgedFileName();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string packgedFileName = 14;</code>
+       */
+      public Builder setPackgedFileNameBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+        
+        packgedFileName_ = value;
         onChanged();
         return this;
       }
@@ -851,81 +2170,97 @@ public final class GreetingServiceOuterClass {
       }
 
 
-      // @@protoc_insertion_point(builder_scope:com.kkennib.grpc.HelloRequest)
+      // @@protoc_insertion_point(builder_scope:com.kkennib.grpc.KeywordFormat)
     }
 
-    // @@protoc_insertion_point(class_scope:com.kkennib.grpc.HelloRequest)
-    private static final com.kkennib.grpc.GreetingServiceOuterClass.HelloRequest DEFAULT_INSTANCE;
+    // @@protoc_insertion_point(class_scope:com.kkennib.grpc.KeywordFormat)
+    private static final com.kkennib.grpc.GreetingServiceOuterClass.KeywordFormat DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new com.kkennib.grpc.GreetingServiceOuterClass.HelloRequest();
+      DEFAULT_INSTANCE = new com.kkennib.grpc.GreetingServiceOuterClass.KeywordFormat();
     }
 
-    public static com.kkennib.grpc.GreetingServiceOuterClass.HelloRequest getDefaultInstance() {
+    public static com.kkennib.grpc.GreetingServiceOuterClass.KeywordFormat getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
-    private static final com.google.protobuf.Parser<HelloRequest>
-        PARSER = new com.google.protobuf.AbstractParser<HelloRequest>() {
+    private static final com.google.protobuf.Parser<KeywordFormat>
+        PARSER = new com.google.protobuf.AbstractParser<KeywordFormat>() {
       @java.lang.Override
-      public HelloRequest parsePartialFrom(
+      public KeywordFormat parsePartialFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new HelloRequest(input, extensionRegistry);
+        return new KeywordFormat(input, extensionRegistry);
       }
     };
 
-    public static com.google.protobuf.Parser<HelloRequest> parser() {
+    public static com.google.protobuf.Parser<KeywordFormat> parser() {
       return PARSER;
     }
 
     @java.lang.Override
-    public com.google.protobuf.Parser<HelloRequest> getParserForType() {
+    public com.google.protobuf.Parser<KeywordFormat> getParserForType() {
       return PARSER;
     }
 
     @java.lang.Override
-    public com.kkennib.grpc.GreetingServiceOuterClass.HelloRequest getDefaultInstanceForType() {
+    public com.kkennib.grpc.GreetingServiceOuterClass.KeywordFormat getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
   }
 
-  public interface HelloResponseOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:com.kkennib.grpc.HelloResponse)
+  public interface WorkResponseOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:com.kkennib.grpc.WorkResponse)
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>string greeting = 1;</code>
+     * <code>string groupId = 1;</code>
      */
-    java.lang.String getGreeting();
+    java.lang.String getGroupId();
     /**
-     * <code>string greeting = 1;</code>
+     * <code>string groupId = 1;</code>
      */
     com.google.protobuf.ByteString
-        getGreetingBytes();
+        getGroupIdBytes();
+
+    /**
+     * <code>string result = 2;</code>
+     */
+    java.lang.String getResult();
+    /**
+     * <code>string result = 2;</code>
+     */
+    com.google.protobuf.ByteString
+        getResultBytes();
+
+    /**
+     * <code>float rate = 3;</code>
+     */
+    float getRate();
   }
   /**
-   * Protobuf type {@code com.kkennib.grpc.HelloResponse}
+   * Protobuf type {@code com.kkennib.grpc.WorkResponse}
    */
-  public  static final class HelloResponse extends
+  public  static final class WorkResponse extends
       com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:com.kkennib.grpc.HelloResponse)
-      HelloResponseOrBuilder {
+      // @@protoc_insertion_point(message_implements:com.kkennib.grpc.WorkResponse)
+      WorkResponseOrBuilder {
   private static final long serialVersionUID = 0L;
-    // Use HelloResponse.newBuilder() to construct.
-    private HelloResponse(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+    // Use WorkResponse.newBuilder() to construct.
+    private WorkResponse(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
       super(builder);
     }
-    private HelloResponse() {
-      greeting_ = "";
+    private WorkResponse() {
+      groupId_ = "";
+      result_ = "";
     }
 
     @java.lang.Override
     @SuppressWarnings({"unused"})
     protected java.lang.Object newInstance(
         UnusedPrivateParameter unused) {
-      return new HelloResponse();
+      return new WorkResponse();
     }
 
     @java.lang.Override
@@ -933,7 +2268,7 @@ public final class GreetingServiceOuterClass {
     getUnknownFields() {
       return this.unknownFields;
     }
-    private HelloResponse(
+    private WorkResponse(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
@@ -954,7 +2289,18 @@ public final class GreetingServiceOuterClass {
             case 10: {
               java.lang.String s = input.readStringRequireUtf8();
 
-              greeting_ = s;
+              groupId_ = s;
+              break;
+            }
+            case 18: {
+              java.lang.String s = input.readStringRequireUtf8();
+
+              result_ = s;
+              break;
+            }
+            case 29: {
+
+              rate_ = input.readFloat();
               break;
             }
             default: {
@@ -978,49 +2324,92 @@ public final class GreetingServiceOuterClass {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.kkennib.grpc.GreetingServiceOuterClass.internal_static_com_kkennib_grpc_HelloResponse_descriptor;
+      return com.kkennib.grpc.GreetingServiceOuterClass.internal_static_com_kkennib_grpc_WorkResponse_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.kkennib.grpc.GreetingServiceOuterClass.internal_static_com_kkennib_grpc_HelloResponse_fieldAccessorTable
+      return com.kkennib.grpc.GreetingServiceOuterClass.internal_static_com_kkennib_grpc_WorkResponse_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.kkennib.grpc.GreetingServiceOuterClass.HelloResponse.class, com.kkennib.grpc.GreetingServiceOuterClass.HelloResponse.Builder.class);
+              com.kkennib.grpc.GreetingServiceOuterClass.WorkResponse.class, com.kkennib.grpc.GreetingServiceOuterClass.WorkResponse.Builder.class);
     }
 
-    public static final int GREETING_FIELD_NUMBER = 1;
-    private volatile java.lang.Object greeting_;
+    public static final int GROUPID_FIELD_NUMBER = 1;
+    private volatile java.lang.Object groupId_;
     /**
-     * <code>string greeting = 1;</code>
+     * <code>string groupId = 1;</code>
      */
-    public java.lang.String getGreeting() {
-      java.lang.Object ref = greeting_;
+    public java.lang.String getGroupId() {
+      java.lang.Object ref = groupId_;
       if (ref instanceof java.lang.String) {
         return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
-        greeting_ = s;
+        groupId_ = s;
         return s;
       }
     }
     /**
-     * <code>string greeting = 1;</code>
+     * <code>string groupId = 1;</code>
      */
     public com.google.protobuf.ByteString
-        getGreetingBytes() {
-      java.lang.Object ref = greeting_;
+        getGroupIdBytes() {
+      java.lang.Object ref = groupId_;
       if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
                 (java.lang.String) ref);
-        greeting_ = b;
+        groupId_ = b;
         return b;
       } else {
         return (com.google.protobuf.ByteString) ref;
       }
+    }
+
+    public static final int RESULT_FIELD_NUMBER = 2;
+    private volatile java.lang.Object result_;
+    /**
+     * <code>string result = 2;</code>
+     */
+    public java.lang.String getResult() {
+      java.lang.Object ref = result_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        result_ = s;
+        return s;
+      }
+    }
+    /**
+     * <code>string result = 2;</code>
+     */
+    public com.google.protobuf.ByteString
+        getResultBytes() {
+      java.lang.Object ref = result_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        result_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    public static final int RATE_FIELD_NUMBER = 3;
+    private float rate_;
+    /**
+     * <code>float rate = 3;</code>
+     */
+    public float getRate() {
+      return rate_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -1037,8 +2426,14 @@ public final class GreetingServiceOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (!getGreetingBytes().isEmpty()) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 1, greeting_);
+      if (!getGroupIdBytes().isEmpty()) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 1, groupId_);
+      }
+      if (!getResultBytes().isEmpty()) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 2, result_);
+      }
+      if (rate_ != 0F) {
+        output.writeFloat(3, rate_);
       }
       unknownFields.writeTo(output);
     }
@@ -1049,8 +2444,15 @@ public final class GreetingServiceOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (!getGreetingBytes().isEmpty()) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, greeting_);
+      if (!getGroupIdBytes().isEmpty()) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, groupId_);
+      }
+      if (!getResultBytes().isEmpty()) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, result_);
+      }
+      if (rate_ != 0F) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeFloatSize(3, rate_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -1062,13 +2464,18 @@ public final class GreetingServiceOuterClass {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof com.kkennib.grpc.GreetingServiceOuterClass.HelloResponse)) {
+      if (!(obj instanceof com.kkennib.grpc.GreetingServiceOuterClass.WorkResponse)) {
         return super.equals(obj);
       }
-      com.kkennib.grpc.GreetingServiceOuterClass.HelloResponse other = (com.kkennib.grpc.GreetingServiceOuterClass.HelloResponse) obj;
+      com.kkennib.grpc.GreetingServiceOuterClass.WorkResponse other = (com.kkennib.grpc.GreetingServiceOuterClass.WorkResponse) obj;
 
-      if (!getGreeting()
-          .equals(other.getGreeting())) return false;
+      if (!getGroupId()
+          .equals(other.getGroupId())) return false;
+      if (!getResult()
+          .equals(other.getResult())) return false;
+      if (java.lang.Float.floatToIntBits(getRate())
+          != java.lang.Float.floatToIntBits(
+              other.getRate())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -1080,76 +2487,81 @@ public final class GreetingServiceOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + GREETING_FIELD_NUMBER;
-      hash = (53 * hash) + getGreeting().hashCode();
+      hash = (37 * hash) + GROUPID_FIELD_NUMBER;
+      hash = (53 * hash) + getGroupId().hashCode();
+      hash = (37 * hash) + RESULT_FIELD_NUMBER;
+      hash = (53 * hash) + getResult().hashCode();
+      hash = (37 * hash) + RATE_FIELD_NUMBER;
+      hash = (53 * hash) + java.lang.Float.floatToIntBits(
+          getRate());
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
     }
 
-    public static com.kkennib.grpc.GreetingServiceOuterClass.HelloResponse parseFrom(
+    public static com.kkennib.grpc.GreetingServiceOuterClass.WorkResponse parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.kkennib.grpc.GreetingServiceOuterClass.HelloResponse parseFrom(
+    public static com.kkennib.grpc.GreetingServiceOuterClass.WorkResponse parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.kkennib.grpc.GreetingServiceOuterClass.HelloResponse parseFrom(
+    public static com.kkennib.grpc.GreetingServiceOuterClass.WorkResponse parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.kkennib.grpc.GreetingServiceOuterClass.HelloResponse parseFrom(
+    public static com.kkennib.grpc.GreetingServiceOuterClass.WorkResponse parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.kkennib.grpc.GreetingServiceOuterClass.HelloResponse parseFrom(byte[] data)
+    public static com.kkennib.grpc.GreetingServiceOuterClass.WorkResponse parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.kkennib.grpc.GreetingServiceOuterClass.HelloResponse parseFrom(
+    public static com.kkennib.grpc.GreetingServiceOuterClass.WorkResponse parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.kkennib.grpc.GreetingServiceOuterClass.HelloResponse parseFrom(java.io.InputStream input)
+    public static com.kkennib.grpc.GreetingServiceOuterClass.WorkResponse parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static com.kkennib.grpc.GreetingServiceOuterClass.HelloResponse parseFrom(
+    public static com.kkennib.grpc.GreetingServiceOuterClass.WorkResponse parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-    public static com.kkennib.grpc.GreetingServiceOuterClass.HelloResponse parseDelimitedFrom(java.io.InputStream input)
+    public static com.kkennib.grpc.GreetingServiceOuterClass.WorkResponse parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-    public static com.kkennib.grpc.GreetingServiceOuterClass.HelloResponse parseDelimitedFrom(
+    public static com.kkennib.grpc.GreetingServiceOuterClass.WorkResponse parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static com.kkennib.grpc.GreetingServiceOuterClass.HelloResponse parseFrom(
+    public static com.kkennib.grpc.GreetingServiceOuterClass.WorkResponse parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static com.kkennib.grpc.GreetingServiceOuterClass.HelloResponse parseFrom(
+    public static com.kkennib.grpc.GreetingServiceOuterClass.WorkResponse parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -1162,7 +2574,7 @@ public final class GreetingServiceOuterClass {
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(com.kkennib.grpc.GreetingServiceOuterClass.HelloResponse prototype) {
+    public static Builder newBuilder(com.kkennib.grpc.GreetingServiceOuterClass.WorkResponse prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
     @java.lang.Override
@@ -1178,26 +2590,26 @@ public final class GreetingServiceOuterClass {
       return builder;
     }
     /**
-     * Protobuf type {@code com.kkennib.grpc.HelloResponse}
+     * Protobuf type {@code com.kkennib.grpc.WorkResponse}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:com.kkennib.grpc.HelloResponse)
-        com.kkennib.grpc.GreetingServiceOuterClass.HelloResponseOrBuilder {
+        // @@protoc_insertion_point(builder_implements:com.kkennib.grpc.WorkResponse)
+        com.kkennib.grpc.GreetingServiceOuterClass.WorkResponseOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.kkennib.grpc.GreetingServiceOuterClass.internal_static_com_kkennib_grpc_HelloResponse_descriptor;
+        return com.kkennib.grpc.GreetingServiceOuterClass.internal_static_com_kkennib_grpc_WorkResponse_descriptor;
       }
 
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.kkennib.grpc.GreetingServiceOuterClass.internal_static_com_kkennib_grpc_HelloResponse_fieldAccessorTable
+        return com.kkennib.grpc.GreetingServiceOuterClass.internal_static_com_kkennib_grpc_WorkResponse_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                com.kkennib.grpc.GreetingServiceOuterClass.HelloResponse.class, com.kkennib.grpc.GreetingServiceOuterClass.HelloResponse.Builder.class);
+                com.kkennib.grpc.GreetingServiceOuterClass.WorkResponse.class, com.kkennib.grpc.GreetingServiceOuterClass.WorkResponse.Builder.class);
       }
 
-      // Construct using com.kkennib.grpc.GreetingServiceOuterClass.HelloResponse.newBuilder()
+      // Construct using com.kkennib.grpc.GreetingServiceOuterClass.WorkResponse.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
@@ -1215,7 +2627,11 @@ public final class GreetingServiceOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        greeting_ = "";
+        groupId_ = "";
+
+        result_ = "";
+
+        rate_ = 0F;
 
         return this;
       }
@@ -1223,17 +2639,17 @@ public final class GreetingServiceOuterClass {
       @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return com.kkennib.grpc.GreetingServiceOuterClass.internal_static_com_kkennib_grpc_HelloResponse_descriptor;
+        return com.kkennib.grpc.GreetingServiceOuterClass.internal_static_com_kkennib_grpc_WorkResponse_descriptor;
       }
 
       @java.lang.Override
-      public com.kkennib.grpc.GreetingServiceOuterClass.HelloResponse getDefaultInstanceForType() {
-        return com.kkennib.grpc.GreetingServiceOuterClass.HelloResponse.getDefaultInstance();
+      public com.kkennib.grpc.GreetingServiceOuterClass.WorkResponse getDefaultInstanceForType() {
+        return com.kkennib.grpc.GreetingServiceOuterClass.WorkResponse.getDefaultInstance();
       }
 
       @java.lang.Override
-      public com.kkennib.grpc.GreetingServiceOuterClass.HelloResponse build() {
-        com.kkennib.grpc.GreetingServiceOuterClass.HelloResponse result = buildPartial();
+      public com.kkennib.grpc.GreetingServiceOuterClass.WorkResponse build() {
+        com.kkennib.grpc.GreetingServiceOuterClass.WorkResponse result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
@@ -1241,9 +2657,11 @@ public final class GreetingServiceOuterClass {
       }
 
       @java.lang.Override
-      public com.kkennib.grpc.GreetingServiceOuterClass.HelloResponse buildPartial() {
-        com.kkennib.grpc.GreetingServiceOuterClass.HelloResponse result = new com.kkennib.grpc.GreetingServiceOuterClass.HelloResponse(this);
-        result.greeting_ = greeting_;
+      public com.kkennib.grpc.GreetingServiceOuterClass.WorkResponse buildPartial() {
+        com.kkennib.grpc.GreetingServiceOuterClass.WorkResponse result = new com.kkennib.grpc.GreetingServiceOuterClass.WorkResponse(this);
+        result.groupId_ = groupId_;
+        result.result_ = result_;
+        result.rate_ = rate_;
         onBuilt();
         return result;
       }
@@ -1282,19 +2700,26 @@ public final class GreetingServiceOuterClass {
       }
       @java.lang.Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof com.kkennib.grpc.GreetingServiceOuterClass.HelloResponse) {
-          return mergeFrom((com.kkennib.grpc.GreetingServiceOuterClass.HelloResponse)other);
+        if (other instanceof com.kkennib.grpc.GreetingServiceOuterClass.WorkResponse) {
+          return mergeFrom((com.kkennib.grpc.GreetingServiceOuterClass.WorkResponse)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(com.kkennib.grpc.GreetingServiceOuterClass.HelloResponse other) {
-        if (other == com.kkennib.grpc.GreetingServiceOuterClass.HelloResponse.getDefaultInstance()) return this;
-        if (!other.getGreeting().isEmpty()) {
-          greeting_ = other.greeting_;
+      public Builder mergeFrom(com.kkennib.grpc.GreetingServiceOuterClass.WorkResponse other) {
+        if (other == com.kkennib.grpc.GreetingServiceOuterClass.WorkResponse.getDefaultInstance()) return this;
+        if (!other.getGroupId().isEmpty()) {
+          groupId_ = other.groupId_;
           onChanged();
+        }
+        if (!other.getResult().isEmpty()) {
+          result_ = other.result_;
+          onChanged();
+        }
+        if (other.getRate() != 0F) {
+          setRate(other.getRate());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -1311,11 +2736,11 @@ public final class GreetingServiceOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        com.kkennib.grpc.GreetingServiceOuterClass.HelloResponse parsedMessage = null;
+        com.kkennib.grpc.GreetingServiceOuterClass.WorkResponse parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (com.kkennib.grpc.GreetingServiceOuterClass.HelloResponse) e.getUnfinishedMessage();
+          parsedMessage = (com.kkennib.grpc.GreetingServiceOuterClass.WorkResponse) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
           if (parsedMessage != null) {
@@ -1325,71 +2750,166 @@ public final class GreetingServiceOuterClass {
         return this;
       }
 
-      private java.lang.Object greeting_ = "";
+      private java.lang.Object groupId_ = "";
       /**
-       * <code>string greeting = 1;</code>
+       * <code>string groupId = 1;</code>
        */
-      public java.lang.String getGreeting() {
-        java.lang.Object ref = greeting_;
+      public java.lang.String getGroupId() {
+        java.lang.Object ref = groupId_;
         if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
           java.lang.String s = bs.toStringUtf8();
-          greeting_ = s;
+          groupId_ = s;
           return s;
         } else {
           return (java.lang.String) ref;
         }
       }
       /**
-       * <code>string greeting = 1;</code>
+       * <code>string groupId = 1;</code>
        */
       public com.google.protobuf.ByteString
-          getGreetingBytes() {
-        java.lang.Object ref = greeting_;
+          getGroupIdBytes() {
+        java.lang.Object ref = groupId_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
                   (java.lang.String) ref);
-          greeting_ = b;
+          groupId_ = b;
           return b;
         } else {
           return (com.google.protobuf.ByteString) ref;
         }
       }
       /**
-       * <code>string greeting = 1;</code>
+       * <code>string groupId = 1;</code>
        */
-      public Builder setGreeting(
+      public Builder setGroupId(
           java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
   
-        greeting_ = value;
+        groupId_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>string greeting = 1;</code>
+       * <code>string groupId = 1;</code>
        */
-      public Builder clearGreeting() {
+      public Builder clearGroupId() {
         
-        greeting_ = getDefaultInstance().getGreeting();
+        groupId_ = getDefaultInstance().getGroupId();
         onChanged();
         return this;
       }
       /**
-       * <code>string greeting = 1;</code>
+       * <code>string groupId = 1;</code>
        */
-      public Builder setGreetingBytes(
+      public Builder setGroupIdBytes(
           com.google.protobuf.ByteString value) {
         if (value == null) {
     throw new NullPointerException();
   }
   checkByteStringIsUtf8(value);
         
-        greeting_ = value;
+        groupId_ = value;
+        onChanged();
+        return this;
+      }
+
+      private java.lang.Object result_ = "";
+      /**
+       * <code>string result = 2;</code>
+       */
+      public java.lang.String getResult() {
+        java.lang.Object ref = result_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          result_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>string result = 2;</code>
+       */
+      public com.google.protobuf.ByteString
+          getResultBytes() {
+        java.lang.Object ref = result_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          result_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>string result = 2;</code>
+       */
+      public Builder setResult(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  
+        result_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string result = 2;</code>
+       */
+      public Builder clearResult() {
+        
+        result_ = getDefaultInstance().getResult();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string result = 2;</code>
+       */
+      public Builder setResultBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+        
+        result_ = value;
+        onChanged();
+        return this;
+      }
+
+      private float rate_ ;
+      /**
+       * <code>float rate = 3;</code>
+       */
+      public float getRate() {
+        return rate_;
+      }
+      /**
+       * <code>float rate = 3;</code>
+       */
+      public Builder setRate(float value) {
+        
+        rate_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>float rate = 3;</code>
+       */
+      public Builder clearRate() {
+        
+        rate_ = 0F;
         onChanged();
         return this;
       }
@@ -1406,56 +2926,849 @@ public final class GreetingServiceOuterClass {
       }
 
 
-      // @@protoc_insertion_point(builder_scope:com.kkennib.grpc.HelloResponse)
+      // @@protoc_insertion_point(builder_scope:com.kkennib.grpc.WorkResponse)
     }
 
-    // @@protoc_insertion_point(class_scope:com.kkennib.grpc.HelloResponse)
-    private static final com.kkennib.grpc.GreetingServiceOuterClass.HelloResponse DEFAULT_INSTANCE;
+    // @@protoc_insertion_point(class_scope:com.kkennib.grpc.WorkResponse)
+    private static final com.kkennib.grpc.GreetingServiceOuterClass.WorkResponse DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new com.kkennib.grpc.GreetingServiceOuterClass.HelloResponse();
+      DEFAULT_INSTANCE = new com.kkennib.grpc.GreetingServiceOuterClass.WorkResponse();
     }
 
-    public static com.kkennib.grpc.GreetingServiceOuterClass.HelloResponse getDefaultInstance() {
+    public static com.kkennib.grpc.GreetingServiceOuterClass.WorkResponse getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
-    private static final com.google.protobuf.Parser<HelloResponse>
-        PARSER = new com.google.protobuf.AbstractParser<HelloResponse>() {
+    private static final com.google.protobuf.Parser<WorkResponse>
+        PARSER = new com.google.protobuf.AbstractParser<WorkResponse>() {
       @java.lang.Override
-      public HelloResponse parsePartialFrom(
+      public WorkResponse parsePartialFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new HelloResponse(input, extensionRegistry);
+        return new WorkResponse(input, extensionRegistry);
       }
     };
 
-    public static com.google.protobuf.Parser<HelloResponse> parser() {
+    public static com.google.protobuf.Parser<WorkResponse> parser() {
       return PARSER;
     }
 
     @java.lang.Override
-    public com.google.protobuf.Parser<HelloResponse> getParserForType() {
+    public com.google.protobuf.Parser<WorkResponse> getParserForType() {
       return PARSER;
     }
 
     @java.lang.Override
-    public com.kkennib.grpc.GreetingServiceOuterClass.HelloResponse getDefaultInstanceForType() {
+    public com.kkennib.grpc.GreetingServiceOuterClass.WorkResponse getDefaultInstanceForType() {
+      return DEFAULT_INSTANCE;
+    }
+
+  }
+
+  public interface WorkListOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:com.kkennib.grpc.WorkList)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <code>repeated .com.kkennib.grpc.KeywordFormat list = 1;</code>
+     */
+    java.util.List<com.kkennib.grpc.GreetingServiceOuterClass.KeywordFormat> 
+        getListList();
+    /**
+     * <code>repeated .com.kkennib.grpc.KeywordFormat list = 1;</code>
+     */
+    com.kkennib.grpc.GreetingServiceOuterClass.KeywordFormat getList(int index);
+    /**
+     * <code>repeated .com.kkennib.grpc.KeywordFormat list = 1;</code>
+     */
+    int getListCount();
+    /**
+     * <code>repeated .com.kkennib.grpc.KeywordFormat list = 1;</code>
+     */
+    java.util.List<? extends com.kkennib.grpc.GreetingServiceOuterClass.KeywordFormatOrBuilder> 
+        getListOrBuilderList();
+    /**
+     * <code>repeated .com.kkennib.grpc.KeywordFormat list = 1;</code>
+     */
+    com.kkennib.grpc.GreetingServiceOuterClass.KeywordFormatOrBuilder getListOrBuilder(
+        int index);
+  }
+  /**
+   * Protobuf type {@code com.kkennib.grpc.WorkList}
+   */
+  public  static final class WorkList extends
+      com.google.protobuf.GeneratedMessageV3 implements
+      // @@protoc_insertion_point(message_implements:com.kkennib.grpc.WorkList)
+      WorkListOrBuilder {
+  private static final long serialVersionUID = 0L;
+    // Use WorkList.newBuilder() to construct.
+    private WorkList(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+      super(builder);
+    }
+    private WorkList() {
+      list_ = java.util.Collections.emptyList();
+    }
+
+    @java.lang.Override
+    @SuppressWarnings({"unused"})
+    protected java.lang.Object newInstance(
+        UnusedPrivateParameter unused) {
+      return new WorkList();
+    }
+
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+    getUnknownFields() {
+      return this.unknownFields;
+    }
+    private WorkList(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      this();
+      if (extensionRegistry == null) {
+        throw new java.lang.NullPointerException();
+      }
+      int mutable_bitField0_ = 0;
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            case 10: {
+              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
+                list_ = new java.util.ArrayList<com.kkennib.grpc.GreetingServiceOuterClass.KeywordFormat>();
+                mutable_bitField0_ |= 0x00000001;
+              }
+              list_.add(
+                  input.readMessage(com.kkennib.grpc.GreetingServiceOuterClass.KeywordFormat.parser(), extensionRegistry));
+              break;
+            }
+            default: {
+              if (!parseUnknownField(
+                  input, unknownFields, extensionRegistry, tag)) {
+                done = true;
+              }
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e).setUnfinishedMessage(this);
+      } finally {
+        if (((mutable_bitField0_ & 0x00000001) != 0)) {
+          list_ = java.util.Collections.unmodifiableList(list_);
+        }
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
+      }
+    }
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return com.kkennib.grpc.GreetingServiceOuterClass.internal_static_com_kkennib_grpc_WorkList_descriptor;
+    }
+
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return com.kkennib.grpc.GreetingServiceOuterClass.internal_static_com_kkennib_grpc_WorkList_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              com.kkennib.grpc.GreetingServiceOuterClass.WorkList.class, com.kkennib.grpc.GreetingServiceOuterClass.WorkList.Builder.class);
+    }
+
+    public static final int LIST_FIELD_NUMBER = 1;
+    private java.util.List<com.kkennib.grpc.GreetingServiceOuterClass.KeywordFormat> list_;
+    /**
+     * <code>repeated .com.kkennib.grpc.KeywordFormat list = 1;</code>
+     */
+    public java.util.List<com.kkennib.grpc.GreetingServiceOuterClass.KeywordFormat> getListList() {
+      return list_;
+    }
+    /**
+     * <code>repeated .com.kkennib.grpc.KeywordFormat list = 1;</code>
+     */
+    public java.util.List<? extends com.kkennib.grpc.GreetingServiceOuterClass.KeywordFormatOrBuilder> 
+        getListOrBuilderList() {
+      return list_;
+    }
+    /**
+     * <code>repeated .com.kkennib.grpc.KeywordFormat list = 1;</code>
+     */
+    public int getListCount() {
+      return list_.size();
+    }
+    /**
+     * <code>repeated .com.kkennib.grpc.KeywordFormat list = 1;</code>
+     */
+    public com.kkennib.grpc.GreetingServiceOuterClass.KeywordFormat getList(int index) {
+      return list_.get(index);
+    }
+    /**
+     * <code>repeated .com.kkennib.grpc.KeywordFormat list = 1;</code>
+     */
+    public com.kkennib.grpc.GreetingServiceOuterClass.KeywordFormatOrBuilder getListOrBuilder(
+        int index) {
+      return list_.get(index);
+    }
+
+    private byte memoizedIsInitialized = -1;
+    @java.lang.Override
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    @java.lang.Override
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      for (int i = 0; i < list_.size(); i++) {
+        output.writeMessage(1, list_.get(i));
+      }
+      unknownFields.writeTo(output);
+    }
+
+    @java.lang.Override
+    public int getSerializedSize() {
+      int size = memoizedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      for (int i = 0; i < list_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(1, list_.get(i));
+      }
+      size += unknownFields.getSerializedSize();
+      memoizedSize = size;
+      return size;
+    }
+
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
+      if (obj == this) {
+       return true;
+      }
+      if (!(obj instanceof com.kkennib.grpc.GreetingServiceOuterClass.WorkList)) {
+        return super.equals(obj);
+      }
+      com.kkennib.grpc.GreetingServiceOuterClass.WorkList other = (com.kkennib.grpc.GreetingServiceOuterClass.WorkList) obj;
+
+      if (!getListList()
+          .equals(other.getListList())) return false;
+      if (!unknownFields.equals(other.unknownFields)) return false;
+      return true;
+    }
+
+    @java.lang.Override
+    public int hashCode() {
+      if (memoizedHashCode != 0) {
+        return memoizedHashCode;
+      }
+      int hash = 41;
+      hash = (19 * hash) + getDescriptor().hashCode();
+      if (getListCount() > 0) {
+        hash = (37 * hash) + LIST_FIELD_NUMBER;
+        hash = (53 * hash) + getListList().hashCode();
+      }
+      hash = (29 * hash) + unknownFields.hashCode();
+      memoizedHashCode = hash;
+      return hash;
+    }
+
+    public static com.kkennib.grpc.GreetingServiceOuterClass.WorkList parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.kkennib.grpc.GreetingServiceOuterClass.WorkList parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.kkennib.grpc.GreetingServiceOuterClass.WorkList parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.kkennib.grpc.GreetingServiceOuterClass.WorkList parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.kkennib.grpc.GreetingServiceOuterClass.WorkList parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.kkennib.grpc.GreetingServiceOuterClass.WorkList parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.kkennib.grpc.GreetingServiceOuterClass.WorkList parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static com.kkennib.grpc.GreetingServiceOuterClass.WorkList parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static com.kkennib.grpc.GreetingServiceOuterClass.WorkList parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input);
+    }
+    public static com.kkennib.grpc.GreetingServiceOuterClass.WorkList parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static com.kkennib.grpc.GreetingServiceOuterClass.WorkList parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static com.kkennib.grpc.GreetingServiceOuterClass.WorkList parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+
+    @java.lang.Override
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder() {
+      return DEFAULT_INSTANCE.toBuilder();
+    }
+    public static Builder newBuilder(com.kkennib.grpc.GreetingServiceOuterClass.WorkList prototype) {
+      return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
+    }
+    @java.lang.Override
+    public Builder toBuilder() {
+      return this == DEFAULT_INSTANCE
+          ? new Builder() : new Builder().mergeFrom(this);
+    }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * Protobuf type {@code com.kkennib.grpc.WorkList}
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:com.kkennib.grpc.WorkList)
+        com.kkennib.grpc.GreetingServiceOuterClass.WorkListOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return com.kkennib.grpc.GreetingServiceOuterClass.internal_static_com_kkennib_grpc_WorkList_descriptor;
+      }
+
+      @java.lang.Override
+      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return com.kkennib.grpc.GreetingServiceOuterClass.internal_static_com_kkennib_grpc_WorkList_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                com.kkennib.grpc.GreetingServiceOuterClass.WorkList.class, com.kkennib.grpc.GreetingServiceOuterClass.WorkList.Builder.class);
+      }
+
+      // Construct using com.kkennib.grpc.GreetingServiceOuterClass.WorkList.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(
+          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessageV3
+                .alwaysUseFieldBuilders) {
+          getListFieldBuilder();
+        }
+      }
+      @java.lang.Override
+      public Builder clear() {
+        super.clear();
+        if (listBuilder_ == null) {
+          list_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000001);
+        } else {
+          listBuilder_.clear();
+        }
+        return this;
+      }
+
+      @java.lang.Override
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return com.kkennib.grpc.GreetingServiceOuterClass.internal_static_com_kkennib_grpc_WorkList_descriptor;
+      }
+
+      @java.lang.Override
+      public com.kkennib.grpc.GreetingServiceOuterClass.WorkList getDefaultInstanceForType() {
+        return com.kkennib.grpc.GreetingServiceOuterClass.WorkList.getDefaultInstance();
+      }
+
+      @java.lang.Override
+      public com.kkennib.grpc.GreetingServiceOuterClass.WorkList build() {
+        com.kkennib.grpc.GreetingServiceOuterClass.WorkList result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      @java.lang.Override
+      public com.kkennib.grpc.GreetingServiceOuterClass.WorkList buildPartial() {
+        com.kkennib.grpc.GreetingServiceOuterClass.WorkList result = new com.kkennib.grpc.GreetingServiceOuterClass.WorkList(this);
+        int from_bitField0_ = bitField0_;
+        if (listBuilder_ == null) {
+          if (((bitField0_ & 0x00000001) != 0)) {
+            list_ = java.util.Collections.unmodifiableList(list_);
+            bitField0_ = (bitField0_ & ~0x00000001);
+          }
+          result.list_ = list_;
+        } else {
+          result.list_ = listBuilder_.build();
+        }
+        onBuilt();
+        return result;
+      }
+
+      @java.lang.Override
+      public Builder clone() {
+        return super.clone();
+      }
+      @java.lang.Override
+      public Builder setField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
+        return super.setField(field, value);
+      }
+      @java.lang.Override
+      public Builder clearField(
+          com.google.protobuf.Descriptors.FieldDescriptor field) {
+        return super.clearField(field);
+      }
+      @java.lang.Override
+      public Builder clearOneof(
+          com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+        return super.clearOneof(oneof);
+      }
+      @java.lang.Override
+      public Builder setRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          int index, java.lang.Object value) {
+        return super.setRepeatedField(field, index, value);
+      }
+      @java.lang.Override
+      public Builder addRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
+        return super.addRepeatedField(field, value);
+      }
+      @java.lang.Override
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof com.kkennib.grpc.GreetingServiceOuterClass.WorkList) {
+          return mergeFrom((com.kkennib.grpc.GreetingServiceOuterClass.WorkList)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(com.kkennib.grpc.GreetingServiceOuterClass.WorkList other) {
+        if (other == com.kkennib.grpc.GreetingServiceOuterClass.WorkList.getDefaultInstance()) return this;
+        if (listBuilder_ == null) {
+          if (!other.list_.isEmpty()) {
+            if (list_.isEmpty()) {
+              list_ = other.list_;
+              bitField0_ = (bitField0_ & ~0x00000001);
+            } else {
+              ensureListIsMutable();
+              list_.addAll(other.list_);
+            }
+            onChanged();
+          }
+        } else {
+          if (!other.list_.isEmpty()) {
+            if (listBuilder_.isEmpty()) {
+              listBuilder_.dispose();
+              listBuilder_ = null;
+              list_ = other.list_;
+              bitField0_ = (bitField0_ & ~0x00000001);
+              listBuilder_ = 
+                com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
+                   getListFieldBuilder() : null;
+            } else {
+              listBuilder_.addAllMessages(other.list_);
+            }
+          }
+        }
+        this.mergeUnknownFields(other.unknownFields);
+        onChanged();
+        return this;
+      }
+
+      @java.lang.Override
+      public final boolean isInitialized() {
+        return true;
+      }
+
+      @java.lang.Override
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        com.kkennib.grpc.GreetingServiceOuterClass.WorkList parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (com.kkennib.grpc.GreetingServiceOuterClass.WorkList) e.getUnfinishedMessage();
+          throw e.unwrapIOException();
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
+          }
+        }
+        return this;
+      }
+      private int bitField0_;
+
+      private java.util.List<com.kkennib.grpc.GreetingServiceOuterClass.KeywordFormat> list_ =
+        java.util.Collections.emptyList();
+      private void ensureListIsMutable() {
+        if (!((bitField0_ & 0x00000001) != 0)) {
+          list_ = new java.util.ArrayList<com.kkennib.grpc.GreetingServiceOuterClass.KeywordFormat>(list_);
+          bitField0_ |= 0x00000001;
+         }
+      }
+
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          com.kkennib.grpc.GreetingServiceOuterClass.KeywordFormat, com.kkennib.grpc.GreetingServiceOuterClass.KeywordFormat.Builder, com.kkennib.grpc.GreetingServiceOuterClass.KeywordFormatOrBuilder> listBuilder_;
+
+      /**
+       * <code>repeated .com.kkennib.grpc.KeywordFormat list = 1;</code>
+       */
+      public java.util.List<com.kkennib.grpc.GreetingServiceOuterClass.KeywordFormat> getListList() {
+        if (listBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(list_);
+        } else {
+          return listBuilder_.getMessageList();
+        }
+      }
+      /**
+       * <code>repeated .com.kkennib.grpc.KeywordFormat list = 1;</code>
+       */
+      public int getListCount() {
+        if (listBuilder_ == null) {
+          return list_.size();
+        } else {
+          return listBuilder_.getCount();
+        }
+      }
+      /**
+       * <code>repeated .com.kkennib.grpc.KeywordFormat list = 1;</code>
+       */
+      public com.kkennib.grpc.GreetingServiceOuterClass.KeywordFormat getList(int index) {
+        if (listBuilder_ == null) {
+          return list_.get(index);
+        } else {
+          return listBuilder_.getMessage(index);
+        }
+      }
+      /**
+       * <code>repeated .com.kkennib.grpc.KeywordFormat list = 1;</code>
+       */
+      public Builder setList(
+          int index, com.kkennib.grpc.GreetingServiceOuterClass.KeywordFormat value) {
+        if (listBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureListIsMutable();
+          list_.set(index, value);
+          onChanged();
+        } else {
+          listBuilder_.setMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .com.kkennib.grpc.KeywordFormat list = 1;</code>
+       */
+      public Builder setList(
+          int index, com.kkennib.grpc.GreetingServiceOuterClass.KeywordFormat.Builder builderForValue) {
+        if (listBuilder_ == null) {
+          ensureListIsMutable();
+          list_.set(index, builderForValue.build());
+          onChanged();
+        } else {
+          listBuilder_.setMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .com.kkennib.grpc.KeywordFormat list = 1;</code>
+       */
+      public Builder addList(com.kkennib.grpc.GreetingServiceOuterClass.KeywordFormat value) {
+        if (listBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureListIsMutable();
+          list_.add(value);
+          onChanged();
+        } else {
+          listBuilder_.addMessage(value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .com.kkennib.grpc.KeywordFormat list = 1;</code>
+       */
+      public Builder addList(
+          int index, com.kkennib.grpc.GreetingServiceOuterClass.KeywordFormat value) {
+        if (listBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureListIsMutable();
+          list_.add(index, value);
+          onChanged();
+        } else {
+          listBuilder_.addMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .com.kkennib.grpc.KeywordFormat list = 1;</code>
+       */
+      public Builder addList(
+          com.kkennib.grpc.GreetingServiceOuterClass.KeywordFormat.Builder builderForValue) {
+        if (listBuilder_ == null) {
+          ensureListIsMutable();
+          list_.add(builderForValue.build());
+          onChanged();
+        } else {
+          listBuilder_.addMessage(builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .com.kkennib.grpc.KeywordFormat list = 1;</code>
+       */
+      public Builder addList(
+          int index, com.kkennib.grpc.GreetingServiceOuterClass.KeywordFormat.Builder builderForValue) {
+        if (listBuilder_ == null) {
+          ensureListIsMutable();
+          list_.add(index, builderForValue.build());
+          onChanged();
+        } else {
+          listBuilder_.addMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .com.kkennib.grpc.KeywordFormat list = 1;</code>
+       */
+      public Builder addAllList(
+          java.lang.Iterable<? extends com.kkennib.grpc.GreetingServiceOuterClass.KeywordFormat> values) {
+        if (listBuilder_ == null) {
+          ensureListIsMutable();
+          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+              values, list_);
+          onChanged();
+        } else {
+          listBuilder_.addAllMessages(values);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .com.kkennib.grpc.KeywordFormat list = 1;</code>
+       */
+      public Builder clearList() {
+        if (listBuilder_ == null) {
+          list_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000001);
+          onChanged();
+        } else {
+          listBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .com.kkennib.grpc.KeywordFormat list = 1;</code>
+       */
+      public Builder removeList(int index) {
+        if (listBuilder_ == null) {
+          ensureListIsMutable();
+          list_.remove(index);
+          onChanged();
+        } else {
+          listBuilder_.remove(index);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .com.kkennib.grpc.KeywordFormat list = 1;</code>
+       */
+      public com.kkennib.grpc.GreetingServiceOuterClass.KeywordFormat.Builder getListBuilder(
+          int index) {
+        return getListFieldBuilder().getBuilder(index);
+      }
+      /**
+       * <code>repeated .com.kkennib.grpc.KeywordFormat list = 1;</code>
+       */
+      public com.kkennib.grpc.GreetingServiceOuterClass.KeywordFormatOrBuilder getListOrBuilder(
+          int index) {
+        if (listBuilder_ == null) {
+          return list_.get(index);  } else {
+          return listBuilder_.getMessageOrBuilder(index);
+        }
+      }
+      /**
+       * <code>repeated .com.kkennib.grpc.KeywordFormat list = 1;</code>
+       */
+      public java.util.List<? extends com.kkennib.grpc.GreetingServiceOuterClass.KeywordFormatOrBuilder> 
+           getListOrBuilderList() {
+        if (listBuilder_ != null) {
+          return listBuilder_.getMessageOrBuilderList();
+        } else {
+          return java.util.Collections.unmodifiableList(list_);
+        }
+      }
+      /**
+       * <code>repeated .com.kkennib.grpc.KeywordFormat list = 1;</code>
+       */
+      public com.kkennib.grpc.GreetingServiceOuterClass.KeywordFormat.Builder addListBuilder() {
+        return getListFieldBuilder().addBuilder(
+            com.kkennib.grpc.GreetingServiceOuterClass.KeywordFormat.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .com.kkennib.grpc.KeywordFormat list = 1;</code>
+       */
+      public com.kkennib.grpc.GreetingServiceOuterClass.KeywordFormat.Builder addListBuilder(
+          int index) {
+        return getListFieldBuilder().addBuilder(
+            index, com.kkennib.grpc.GreetingServiceOuterClass.KeywordFormat.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .com.kkennib.grpc.KeywordFormat list = 1;</code>
+       */
+      public java.util.List<com.kkennib.grpc.GreetingServiceOuterClass.KeywordFormat.Builder> 
+           getListBuilderList() {
+        return getListFieldBuilder().getBuilderList();
+      }
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          com.kkennib.grpc.GreetingServiceOuterClass.KeywordFormat, com.kkennib.grpc.GreetingServiceOuterClass.KeywordFormat.Builder, com.kkennib.grpc.GreetingServiceOuterClass.KeywordFormatOrBuilder> 
+          getListFieldBuilder() {
+        if (listBuilder_ == null) {
+          listBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+              com.kkennib.grpc.GreetingServiceOuterClass.KeywordFormat, com.kkennib.grpc.GreetingServiceOuterClass.KeywordFormat.Builder, com.kkennib.grpc.GreetingServiceOuterClass.KeywordFormatOrBuilder>(
+                  list_,
+                  ((bitField0_ & 0x00000001) != 0),
+                  getParentForChildren(),
+                  isClean());
+          list_ = null;
+        }
+        return listBuilder_;
+      }
+      @java.lang.Override
+      public final Builder setUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.setUnknownFields(unknownFields);
+      }
+
+      @java.lang.Override
+      public final Builder mergeUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.mergeUnknownFields(unknownFields);
+      }
+
+
+      // @@protoc_insertion_point(builder_scope:com.kkennib.grpc.WorkList)
+    }
+
+    // @@protoc_insertion_point(class_scope:com.kkennib.grpc.WorkList)
+    private static final com.kkennib.grpc.GreetingServiceOuterClass.WorkList DEFAULT_INSTANCE;
+    static {
+      DEFAULT_INSTANCE = new com.kkennib.grpc.GreetingServiceOuterClass.WorkList();
+    }
+
+    public static com.kkennib.grpc.GreetingServiceOuterClass.WorkList getDefaultInstance() {
+      return DEFAULT_INSTANCE;
+    }
+
+    private static final com.google.protobuf.Parser<WorkList>
+        PARSER = new com.google.protobuf.AbstractParser<WorkList>() {
+      @java.lang.Override
+      public WorkList parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new WorkList(input, extensionRegistry);
+      }
+    };
+
+    public static com.google.protobuf.Parser<WorkList> parser() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<WorkList> getParserForType() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public com.kkennib.grpc.GreetingServiceOuterClass.WorkList getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
   }
 
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_com_kkennib_grpc_HelloRequest_descriptor;
+    internal_static_com_kkennib_grpc_KeywordFormat_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_com_kkennib_grpc_HelloRequest_fieldAccessorTable;
+      internal_static_com_kkennib_grpc_KeywordFormat_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_com_kkennib_grpc_HelloResponse_descriptor;
+    internal_static_com_kkennib_grpc_WorkResponse_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_com_kkennib_grpc_HelloResponse_fieldAccessorTable;
+      internal_static_com_kkennib_grpc_WorkResponse_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_com_kkennib_grpc_WorkList_descriptor;
+  private static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_com_kkennib_grpc_WorkList_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
@@ -1466,28 +3779,57 @@ public final class GreetingServiceOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\025GreetingService.proto\022\020com.kkennib.grp" +
-      "c\"-\n\014HelloRequest\022\014\n\004name\030\001 \001(\t\022\017\n\007hobbi" +
-      "es\030\002 \003(\t\"!\n\rHelloResponse\022\020\n\010greeting\030\001 " +
-      "\001(\t2^\n\017GreetingService\022K\n\010greeting\022\036.com" +
-      ".kkennib.grpc.HelloRequest\032\037.com.kkennib" +
-      ".grpc.HelloResponseb\006proto3"
+      "c\"\243\002\n\rKeywordFormat\022\017\n\007groupId\030\001 \001(\t\022\020\n\010" +
+      "keywords\030\002 \001(\t\022\r\n\005dates\030\003 \001(\t\022\021\n\tsiteTyp" +
+      "es\030\004 \001(\t\022\024\n\014currentState\030\005 \001(\t\022\021\n\toperat" +
+      "ors\030\006 \001(\t\022\026\n\016totalWorkCount\030\007 \001(\003\022\031\n\021fin" +
+      "ishedWorkCount\030\010 \001(\003\022\021\n\ttopicName\030\t \001(\t\022" +
+      "\017\n\007keyword\030\n \001(\t\022\020\n\010siteType\030\013 \001(\t\022\021\n\tst" +
+      "artDate\030\014 \001(\t\022\017\n\007endDate\030\r \001(\t\022\027\n\017packge" +
+      "dFileName\030\016 \001(\t\"=\n\014WorkResponse\022\017\n\007group" +
+      "Id\030\001 \001(\t\022\016\n\006result\030\002 \001(\t\022\014\n\004rate\030\003 \001(\002\"9" +
+      "\n\010WorkList\022-\n\004list\030\001 \003(\0132\037.com.kkennib.g" +
+      "rpc.KeywordFormat2\215\005\n\017GreetingService\022M\n" +
+      "\ncreateWork\022\037.com.kkennib.grpc.KeywordFo" +
+      "rmat\032\036.com.kkennib.grpc.WorkResponse\022L\n\t" +
+      "beginWork\022\037.com.kkennib.grpc.KeywordForm" +
+      "at\032\036.com.kkennib.grpc.WorkResponse\022M\n\nre" +
+      "sumeWork\022\037.com.kkennib.grpc.KeywordForma" +
+      "t\032\036.com.kkennib.grpc.WorkResponse\022P\n\rter" +
+      "minateWork\022\037.com.kkennib.grpc.KeywordFor" +
+      "mat\032\036.com.kkennib.grpc.WorkResponse\022L\n\tp" +
+      "auseWork\022\037.com.kkennib.grpc.KeywordForma" +
+      "t\032\036.com.kkennib.grpc.WorkResponse\022T\n\017get" +
+      "CurrentState\022\037.com.kkennib.grpc.KeywordF" +
+      "ormat\032\036.com.kkennib.grpc.WorkResponse0\001\022" +
+      "K\n\014getWorkTable\022\037.com.kkennib.grpc.Keywo" +
+      "rdFormat\032\032.com.kkennib.grpc.WorkList\022K\n\010" +
+      "greeting\022\037.com.kkennib.grpc.KeywordForma" +
+      "t\032\036.com.kkennib.grpc.WorkResponseb\006proto" +
+      "3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
         });
-    internal_static_com_kkennib_grpc_HelloRequest_descriptor =
+    internal_static_com_kkennib_grpc_KeywordFormat_descriptor =
       getDescriptor().getMessageTypes().get(0);
-    internal_static_com_kkennib_grpc_HelloRequest_fieldAccessorTable = new
+    internal_static_com_kkennib_grpc_KeywordFormat_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_com_kkennib_grpc_HelloRequest_descriptor,
-        new java.lang.String[] { "Name", "Hobbies", });
-    internal_static_com_kkennib_grpc_HelloResponse_descriptor =
+        internal_static_com_kkennib_grpc_KeywordFormat_descriptor,
+        new java.lang.String[] { "GroupId", "Keywords", "Dates", "SiteTypes", "CurrentState", "Operators", "TotalWorkCount", "FinishedWorkCount", "TopicName", "Keyword", "SiteType", "StartDate", "EndDate", "PackgedFileName", });
+    internal_static_com_kkennib_grpc_WorkResponse_descriptor =
       getDescriptor().getMessageTypes().get(1);
-    internal_static_com_kkennib_grpc_HelloResponse_fieldAccessorTable = new
+    internal_static_com_kkennib_grpc_WorkResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_com_kkennib_grpc_HelloResponse_descriptor,
-        new java.lang.String[] { "Greeting", });
+        internal_static_com_kkennib_grpc_WorkResponse_descriptor,
+        new java.lang.String[] { "GroupId", "Result", "Rate", });
+    internal_static_com_kkennib_grpc_WorkList_descriptor =
+      getDescriptor().getMessageTypes().get(2);
+    internal_static_com_kkennib_grpc_WorkList_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_com_kkennib_grpc_WorkList_descriptor,
+        new java.lang.String[] { "List", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

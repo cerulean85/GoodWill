@@ -20,10 +20,13 @@ import java.util.Properties;
 public class Main {
     static Logger log = LoggerFactory.getLogger(ConsumerDaemon.class);
 
-    public static void main( String[] args ) throws IOException, InterruptedException, ServletException, SQLException {
+    public static void main( String[] args ) {
 
-        DBConn conn = new DBConn();
-        conn.updateState_Terminated("test");
+        GRpcReceiver receiver = new GRpcReceiver();
+        receiver.receive();
+
+//        DBConn conn = new DBConn();
+//        DBConn.getInstance().updateState_Terminated("test");
 
 //        Server server = ServerBuilder.forPort(8085)
 //                .addService(new GreetingServiceImpl())
